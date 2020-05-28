@@ -10,7 +10,27 @@
     <body>
         <div id="container" >
             <div id="barraSuperior">
+                <div id="contenedor-barra-superior">
                     <h1 id="logo">Traduciendo el derecho</h1>
+                    <div id="opciones-menu" class="titulo">
+                        <ul>
+                            <li class="item-menu cursor-pointer">Contacto <div class="indicador-selected"></div></li>
+                            <li class="item-menu cursor-pointer">Nosotros <div class="indicador-selected"></div></li>
+                            <li class="item-menu cursor-pointer">Publicaciones <div class="indicador-selected"></div></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="contenido">
+                <div id="cont-items-menu-publicaciones">
+                    <div id="items-menu-publicaciones">
+                        <ul class="titulo">
+                            <li class="item-menu-publicaciones cursor-pointer">Recientes <div class=" backGroundBlue indicador-selected"></div></li>
+                            <li class="item-menu-publicaciones cursor-pointer">Más vistos <div class=" backGroundBlue indicador-selected"></div></li>
+                            <li class="item-menu-publicaciones cursor-pointer">Más relevantes <div class=" backGroundBlue indicador-selected"></div></li>
+                            <li class="item-menu-publicaciones cursor-pointer">Todos <div class=" backGroundBlue indicador-selected"></div></li>
+                        </ul>
+                    </div>
                     <div id="cont-form-filter">
                         <div id="form-filter">
                             <div id="comboCategorias" class="inptsFiltros">
@@ -24,23 +44,24 @@
                                             <span></span>
                                         </div>
                                         <div id="cont-items-cat">
-
                                         </div>
                                     </div>
                                 </div>
                                 <div id="btnShowItems" class="cursor-pointer"></div>
                             </div>
-                            <input type="text" placeholder="Buscar publicaciones" class="inptsFiltros" id="inputbuscarPublicaciones">
+                            <input type="search" placeholder="Buscar publicaciones" class="inptsFiltros" id="inputbuscarPublicaciones">
                         </div>
                         <div id="logoBuscar"  class="cursor-pointer"></div>
                     </div> 
+                </div>
+                <hr id="linea">
+                <div id="contenerdor-publicaciones">
+                    <article class="article">
+                        <h4>Articulo</h4>
+                    </article>
+                </div>
             </div>
-            <div id="contenido">
-                <article class="article">
-                    <h4>Articulo</h4>
-                
-                </article>
-            </div>
+            
         </div>
         <script type="text/javascript" src="./src/js/ApiRequest.js"></script>
         <script type="text/javascript" src="./src/js/Animations.js"></script>

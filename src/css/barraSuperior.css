@@ -2,167 +2,71 @@
     font-family: Pacifico;
     src: url(../fonts/Pacifico/Pacifico-Regular.ttf);
   }
+@font-face {
+  font-family: Oswald;
+  src: url(../fonts/Oswald/Oswald-Regular.ttf);
+}
 #barraSuperior{
     background-color: #00264C;
-    padding-left: 5px;
-    padding-right: 5px;
-    grid-template-columns:250px auto 30px;
-    grid-template-areas:"logo nada logobuscar";
-    height: 40px;
-    display:grid;
+    height: 80px;
+  
+}
+.titulo {
+  font-family: Oswald;
+}
+.vertical-midle{
+  vertical-align: middle;
+}
+#contenedor-barra-superior{
+  display:grid;
+  grid-template-columns:5fr 5fr;
+  grid-template-areas:"logo opciones";
+  width: 90%;
+  height: 100%;
+  margin: auto;
 }
 #logo{
     font-family: 'Pacifico', sans-serif;   
     color: white;
-    font-size: 18px !important;
+    font-size: 22px !important;
     letter-spacing: 3px;
     display: inline-block;
     margin-block-start: 0em !important;
     margin-block-end: 0em !important;
     grid-area: logo;
     height: auto;
-    width: 250px;
-    text-align: center;
-    padding: 4px 4px 0px 0px;
+    width: auto;
+    text-align: left;
+    font-weight: 500;
+    padding-block-start: 1em;
 }
-#cont-form-filter{
-    width: 100%;
-    height: 100%;
-    display: inline-block;
-    grid-area: logobuscar;
+#opciones-menu{
+  grid-area: opciones;
+}
+#opciones-menu ul{
+  list-style: none;
+  color: white;
+}
+#opciones-menu ul li{
+  float: right;
+  margin-left: 15px;
+  margin-top: 0.5em;
+  font-size: 20px;
+  font-weight: 100;
+}
+.indicador-selected{
+  background-color: white;
+  height: 4px;
+  width: 100%;
+  border-radius: 2px 2px 0px 0px;
+  display: none;
+}
 
-}
-#logoBuscar{
-    background-image: url("../imagenes/icons/search.svg");
-    width: 35px;
-    height: 35px;
-    color: white;
-    display: inline-block;
-    background-position: center;
-    background-repeat: no-repeat;
-    float: right;
-    color:transparent;
-    margin-left: -4px;
-    margin-top: 2.5px;
-}
-#form-filter{
+@media only screen and (max-width: 750px) {
+  #opciones-menu{
     display: none;
-    float: left;
-    width: calc(100% - 35px);
-    background-color: #ECECEC;
-    height: 35px;
-    margin-top: 2.5px;
-}
-#inputbuscarPublicaciones{
-    width: 79%;
-}
-.inptsFiltros{
-    border: none;
-    height: 30px;
-    font-family: Roboto;
-    font-size: 13px;
-    background-color: transparent;
-}
-#comboCategorias{
-    display:inline-grid;
-    grid-template-columns: 2fr 1fr;
-    width: 20%;
-    max-width: 150px;
-    float: left;
-    height: 100%;
-    font-size: 12px;
-}
-#btnShowItems{
-    background-image: url("../imagenes/icons/expand_more.svg");
-    width: 35px;
-    height: 35px;
-    background-position: center;
-    background-repeat: no-repeat;
-    font-size:18px;
-}
-.icon-check{
-    background-image: url("../imagenes/icons/radio_button_unchecked.svg");
-    width: 11px;
-    height: 11px;
-    background-position: center;
-    background-repeat: no-repeat;
-    font-size:11px;
-}
-#item-combo-categorias-selected{
-    text-align: center;
-    width: 100%;
-    margin-top: 10px;
-}
-.cursor-pointer{
-    cursor: pointer;
-}
-#cont-items-Combo{
-    position: relative;
-}
-.items-combo-categorias{
-    width: 100%;
-    margin: 4px;
-    text-align: center;
-}
-.items-combo-categorias:hover{
-    cursor: pointer;
-    background-color: darkcyan;
-}
-#cont-items-categorigas{
-    display: none;
-    background-color: white;
-    position: absolute;
-    box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.25);
-    width: calc(100% - 4px);
-    padding: 4px;
-    height:150px;
-    overflow: auto;
-}
-
-
-
-
-/*loader categorias*/
-#loader-6{
-    top: 40px;
-    left: -2.5px;
-}
-  
-  #loader-6 span{
-    display: inline-block;
-    width: 2px;
-    height: 10px;
-    background-color: #3498db;
   }
-  
-  #loader-6 span:nth-child(1){
-    animation: grow 1s ease-in-out infinite;
+  #contenedor-barra-superior{
+    grid-template-columns:10fr 0fr;
   }
-  
-  #loader-6 span:nth-child(2){
-    animation: grow 1s ease-in-out 0.15s infinite;
-  }
-  
-  #loader-6 span:nth-child(3){
-    animation: grow 1s ease-in-out 0.30s infinite;
-  }
-  
-  #loader-6 span:nth-child(4){
-    animation: grow 1s ease-in-out 0.45s infinite;
-  }
-  
-  @keyframes grow{
-    0%, 100%{
-      -webkit-transform: scaleY(1);
-      -ms-transform: scaleY(1);
-      -o-transform: scaleY(1);
-      transform: scaleY(1);
-    }
-  
-    50%{
-      -webkit-transform: scaleY(1.8);
-      -ms-transform: scaleY(1.8);
-      -o-transform: scaleY(1.8);
-      transform: scaleY(1.8);
-    }
-  }
+}

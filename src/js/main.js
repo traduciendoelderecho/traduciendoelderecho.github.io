@@ -1,8 +1,10 @@
-let Data = null;
-const formFilter = document.getElementById("form-filter");
-const contFormFilter = document.getElementById("cont-form-filter");
+let Data = null
+const formFilter = document.getElementById("form-filter")
+const contFormFilter = document.getElementById("cont-form-filter")
 const logoBuscar =  document.getElementById("logoBuscar")
-const  logo =  document.getElementById("logo");
+const  logo =  document.getElementById("logo")
+const itemsMenu = document.getElementsByClassName('item-menu')
+const itemsMenuPublicaciones  = document.getElementsByClassName('item-menu-publicaciones');
 /*
 document.addEventListener('DOMContentLoaded',request.getData(
     (response)=>{
@@ -11,6 +13,8 @@ document.addEventListener('DOMContentLoaded',request.getData(
     "https://traduciendoelderecho.github.io/src/js/data.json"
     ))
 */
+animations.selectedtitles(itemsMenu)
+animations.selectedtitles(itemsMenuPublicaciones)
 document.getElementById("logoBuscar").addEventListener(
     'click',
     () => {
