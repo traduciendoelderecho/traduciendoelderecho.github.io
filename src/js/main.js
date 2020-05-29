@@ -1,18 +1,20 @@
-let Data = null
+var dataPublicationsSmall = null
 const formFilter = document.getElementById("form-filter")
 const contFormFilter = document.getElementById("cont-form-filter")
 const logoBuscar =  document.getElementById("logoBuscar")
 const  logo =  document.getElementById("logo")
 const itemsMenu = document.getElementsByClassName('item-menu')
 const itemsMenuPublicaciones  = document.getElementsByClassName('item-menu-publicaciones');
-/*
+const contPublicaciones = document.getElementById("contenerdor-publicaciones");
 document.addEventListener('DOMContentLoaded',request.getData(
     (response)=>{
-        Data  = JSON.parse(response)
+        dataPublicationsSmall  = JSON.parse(response)
+        animations.addPublicationsToContainer(dataPublicationsSmall,contPublicaciones)
     },
-    "https://traduciendoelderecho.github.io/src/js/data.json"
+    "http://192.168.1.38:5500/src/js/data-publications-small.json"
     ))
-*/
+
+
 animations.selectedtitles(itemsMenu)
 animations.selectedtitles(itemsMenuPublicaciones)
 document.getElementById("logoBuscar").addEventListener(
@@ -30,11 +32,11 @@ document.getElementById("btnShowItems").addEventListener('click',
         cont.style.display = "block"
         request.getData(
             (response)=>{
-                Data  = JSON.parse(response)
-                animations.createItemsForCateories(Data,document.getElementById("cont-items-cat"))
+               let dataCategories  = JSON.parse(response)
+                animations.createItemsForCateories(dataCategories,document.getElementById("cont-items-cat"))
                 document.getElementById("loader-6").style.display ="none"
             },
-            "https://traduciendoelderecho.github.io/src/js/data.json"
+            "http://192.168.1.38:5500/src/js/data-categories.json"
             )
        }
     }    

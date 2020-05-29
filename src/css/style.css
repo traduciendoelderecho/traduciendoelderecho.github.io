@@ -1,5 +1,7 @@
 @import 'barraSuperior.css';
 @import 'Filtro.css';
+@import 'Menu-movil.css';
+@import 'Publicaciones.css';
 @font-face {
     font-family: Roboto;
     src: url(../fonts/Roboto/Roboto-Regular.ttf);
@@ -18,6 +20,9 @@ body,html{
 #contenido{
     width: 90%;
     margin: auto;
+}
+#nosotros,#contacto{
+    display: none;
 }
 /* Sub titulos en publicaciones */
 #cont-items-menu-publicaciones{
@@ -54,7 +59,9 @@ body,html{
 .backGroundBlue{
     background-color:#00264C !important ;
 }
-
+.text-color-white{
+    color: white;
+}
 @media only screen and (max-width: 1356px) {
     #contenido{
         width: 99%;

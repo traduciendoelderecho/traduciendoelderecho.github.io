@@ -22,46 +22,58 @@
                 </div>
             </div>
             <div id="contenido">
-                <div id="cont-items-menu-publicaciones">
-                    <div id="items-menu-publicaciones">
-                        <ul class="titulo">
-                            <li class="item-menu-publicaciones cursor-pointer">Recientes <div class=" backGroundBlue indicador-selected"></div></li>
-                            <li class="item-menu-publicaciones cursor-pointer">Más vistos <div class=" backGroundBlue indicador-selected"></div></li>
-                            <li class="item-menu-publicaciones cursor-pointer">Más relevantes <div class=" backGroundBlue indicador-selected"></div></li>
-                            <li class="item-menu-publicaciones cursor-pointer">Todos <div class=" backGroundBlue indicador-selected"></div></li>
-                        </ul>
-                    </div>
-                    <div id="cont-form-filter">
-                        <div id="form-filter">
-                            <div id="comboCategorias" class="inptsFiltros">
-                                <div id="cont-items-Combo">
-                                    <div id="item-combo-categorias-selected">Todo</div>
-                                    <div id="cont-items-categorigas">
-                                        <div class="loader" id="loader-6">
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                        </div>
-                                        <div id="cont-items-cat">
+                <div id="publicaciones"> 
+                    <div id="cont-items-menu-publicaciones">
+                        <div id="items-menu-publicaciones">
+                            <ul class="titulo">
+                                <li class="item-menu-publicaciones cursor-pointer">Recientes <div class=" backGroundBlue indicador-selected"></div></li>
+                                <li class="item-menu-publicaciones cursor-pointer">Más vistos <div class=" backGroundBlue indicador-selected"></div></li>
+                                <li class="item-menu-publicaciones cursor-pointer">Más relevantes <div class=" backGroundBlue indicador-selected"></div></li>
+                                <li class="item-menu-publicaciones cursor-pointer">Todos <div class=" backGroundBlue indicador-selected"></div></li>
+                            </ul>
+                        </div>
+                        <div id="cont-form-filter">
+                            <div id="form-filter">
+                                <div id="comboCategorias" class="inptsFiltros">
+                                    <div id="cont-items-Combo">
+                                        <div id="item-combo-categorias-selected">Todo</div>
+                                        <div id="cont-items-categorigas">
+                                            <div class="loader" id="loader-6">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div id="cont-items-cat">
+                                            </div>
                                         </div>
                                     </div>
+                                    <div id="btnShowItems" class="cursor-pointer"></div>
                                 </div>
-                                <div id="btnShowItems" class="cursor-pointer"></div>
+                                <input type="search" placeholder="Buscar publicaciones" class="inptsFiltros" id="inputbuscarPublicaciones">
                             </div>
-                            <input type="search" placeholder="Buscar publicaciones" class="inptsFiltros" id="inputbuscarPublicaciones">
-                        </div>
-                        <div id="logoBuscar"  class="cursor-pointer"></div>
-                    </div> 
+                            <div id="logoBuscar"  class="cursor-pointer"></div>
+                        </div> 
+                    </div>
+                    <hr id="linea">
+                    <div id="contenerdor-publicaciones">
+                    </div>
                 </div>
-                <hr id="linea">
-                <div id="contenerdor-publicaciones">
-                    <article class="article">
-                        <h4>Articulo</h4>
-                    </article>
+                <div id="nosotros">
+                    <h1>Nosotros</h1>
+                </div>
+                <div id="contacto">
+                    <h1>Contacto</h1>
                 </div>
             </div>
-            
+            <div id="menu-movil">
+                <div id="btnHome" class="items-menu-movil">
+                </div>
+                <div id="btnContacto" class="items-menu-movil">
+                </div>
+                <div id="btnNotros" class="items-menu-movil">
+                </div>
+            </div>
         </div>
         <script type="text/javascript" src="./src/js/ApiRequest.js"></script>
         <script type="text/javascript" src="./src/js/Animations.js"></script>

@@ -1,0 +1,57 @@
+#contenerdor-publicaciones{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+}
+.publicacion{
+    width: 310px;
+    border-radius: 10px;
+    height: 460px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    box-shadow: 3px 2px 18px rgba(96, 96, 96, 0.13);
+    position: relative;
+}
+.publicacion p {
+    font-size: 18px;
+    color: #696969;
+    font-weight: 100;
+    text-align: justify;
+    line-height: 1.3;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.encabezado{
+    background-image: url('../imagenes/imagenes-articulos/img-prba.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    opacity: 1;
+    background-color:grey;
+    padding: 10px;
+    min-height: 170px;
+    border-radius: 10px 10px 0px 0px;
+    position: relative;
+}
+.publicacion h2{
+    font-size: 28px;
+    max-height: 102px;
+}
+.tema{
+    font-size: 11px;
+    display: inline-block;
+    border: solid 1px white;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: 500;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.fecha{
+    font-size: 11px;
+    color: #B7B7B7;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
