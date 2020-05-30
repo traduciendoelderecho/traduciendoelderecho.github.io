@@ -43,21 +43,52 @@ const  animations = {
             for(let  i = 0 ; i < titles.length;i++){
                 titles[i].addEventListener('click',(e)=>{
                     let elemtoSelecionado =  e.srcElement;
-                    let titulos = titles
-                    for(let e = 0 ; e < titulos.length ; e ++){
-                        titulos[e].style.fontWeight = "100"
-                        titulos[e].firstChild.nextSibling.style.display ="none"
-                    }
-                    elemtoSelecionado.style.fontWeight = "700"
-                    elemtoSelecionado.firstChild.nextSibling.style.display ="block"
+                   
+                    animations.desSelectItemMenu(menuAppSelected.buttons)
+                    menuAppSelected.srcContent.style.display ="none"
+                    
+                    collectionItemsMenu.forEach(item => {
+                        item.buttons.forEach( subitem =>{
+                            if(elemtoSelecionado == subitem.srcDom){
+                                menuAppSelected = item
+                                animations.resaltarItemMenuSelected(menuAppSelected.buttons)
+                                menuAppSelected.srcContent.style.display = "block"
+                            }
+                        })
+                    })
+                    
                 })
             }
         },
+        resaltarItemMenuSelected : (items) =>{
+            items.forEach(item => {
+                tipo = item.srcDom.dataset.tipo 
+                if(tipo == "desktop"){
+                    item.srcDom.style.fontWeight = "700"
+                    item.srcDom.firstChild.nextSibling.style.display ="block"
+                 }else{
+                    item.srcDom.style.opacity = "1"
+                 }
+            })
+        },
+        desSelectItemMenu:(items)=>{
+            items.forEach(item => {
+                tipo = item.srcDom.dataset.tipo 
+                if(tipo == "desktop"){
+                    item.srcDom.style.fontWeight = "100"
+                    item.srcDom.firstChild.nextSibling.style.display ="none"
+                 }else{
+                    item.srcDom.style.opacity = "0.5"
+                 }
+            })
+        }
+        ,
         addPublicationsToContainer:(data,container)=>{
             data.map( (publicacion) => animations.createNodosForPublication(publicacion))
             .forEach( elemnt => container.appendChild(elemnt))
         },
         createNodosForPublication:(publication)=>{
+            contador ++
             let publicacion  = document.createElement("article")
             let encabezado = document.createElement("div")
             let titulo = document.createElement("h2")

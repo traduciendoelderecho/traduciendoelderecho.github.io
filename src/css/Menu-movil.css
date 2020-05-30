@@ -15,6 +15,7 @@
     width: 35px;
     height: 35px;
     margin: auto;
+    opacity: 0.5;
 }
 #btnHome{
     background-image: url("../imagenes/icons/home-24px.svg");
