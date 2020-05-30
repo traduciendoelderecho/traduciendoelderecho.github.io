@@ -2,6 +2,7 @@
 @import 'Filtro.css';
 @import 'Menu-movil.css';
 @import 'Publicaciones.css';
+@import 'loaderApp.css';
 @font-face {
     font-family: Roboto;
     src: url(../fonts/Roboto/Roboto-Regular.ttf);

@@ -1,6 +1,7 @@
 var dataPublicationsSmall = null
-// Items del menu app
-
+const urlBaseImages = "../src/imagenes"
+const urlCarpetaImagenesArticulos = "/imagenes-articulos/"
+const urlCarpetaIconos = "/icons/"
 const publicacionesOption ={
     buttons: [
         {srcDom : document.getElementById("publicaciones-menu-app-option")},
@@ -25,7 +26,6 @@ const contactoOption = {
 }
 
 const collectionItemsMenu =[publicacionesOption,nosotrosOption,contactoOption]
-var contador = 0;
 var menuAppSelected = publicacionesOption
 
 const formFilter = document.getElementById("form-filter")
@@ -42,6 +42,7 @@ document.addEventListener('DOMContentLoaded',request.getData(
         animations.addPublicationsToContainer(dataPublicationsSmall,contPublicaciones)
         menuAppSelected.srcContent.style.display = "block"
         animations.resaltarItemMenuSelected(menuAppSelected.buttons)
+        document.getElementById("cont-loader").style.display = "none"
     },
     "http://192.168.1.38:5500/src/js/data-publications-small.json"
     ))

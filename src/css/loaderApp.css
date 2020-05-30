@@ -1,0 +1,77 @@
+#cont-loader{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    top: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+}
+#logotipoAndLoader{
+    max-width: 40em;
+    margin: auto;
+}
+#logotipoAndLoader h1{
+    color: #00264C;
+    font-family: Pacifico;
+    font-size: 42px;
+    letter-spacing: 3px;
+    text-align: center;
+    font-weight: 100;
+}
+#loader-app{
+    margin: auto;
+    height:40px;
+    width:100px
+}
+.part2.p1 {
+animation: part2p1 .5s infinite;
+}
+.part2.p2 {
+animation: part2p2 .5s infinite;
+}
+
+.part2.p3 {
+animation: part2p3 .5s infinite;
+}
+
+.part2.p4 {
+animation: part2p4 .5s infinite;
+}
+
+.part2.p5 {
+animation: part2p5 .5s infinite;
+}
+.part2 {
+width: 12px;
+margin: 15% auto;
+height: 12px;
+background:#00264C;
+display: inline-block;
+}
+
+@keyframes part2p1 {
+0% {
+transform: scale(1, 2.7);
+}
+}
+@keyframes part2p2 {
+25% {
+transform: scale(1, 2.7);
+}
+}
+@keyframes part2p3 {
+40% {
+transform: scale(1, 2.7);
+}
+}
+@keyframes part2p4 {
+60% {
+transform: scale(1, 2.7);
+}
+}
+@keyframes part2p5 {
+80% {
+transform: scale(1, 2.7);
+}
+}

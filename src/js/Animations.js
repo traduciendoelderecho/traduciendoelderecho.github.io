@@ -26,7 +26,7 @@ const  animations = {
                         animations.limpiaFiltros()
                         let categoria =  divText.firstChild.nextSibling.innerText
                         document.getElementById("item-combo-categorias-selected").innerText = categoria
-                        divText.firstChild.style.backgroundImage = "url(./src/imagenes/icons/radio_button_checked.svg)"
+                        divText.firstChild.style.backgroundImage = "url("+urlBaseImages+urlCarpetaIconos+"radio_button_checked.svg)"
                     })
                     divIcon.className = "icon-check"
                     divText.appendChild(divIcon)
@@ -36,7 +36,7 @@ const  animations = {
         }, limpiaFiltros : ()=>{
             let items  = document.getElementsByClassName("items-combo-categorias");
             for(let i = 0  ; i < items.length; i++){
-                    items[i].firstChild.style.backgroundImage = "url(./src/imagenes/icons/radio_button_unchecked.svg)"
+                    items[i].firstChild.style.backgroundImage = "url("+urlBaseImages+urlCarpetaIconos+"radio_button_unchecked.svg)"
             }
         },
         selectedtitles : (titles)=>{
@@ -88,7 +88,7 @@ const  animations = {
             .forEach( elemnt => container.appendChild(elemnt))
         },
         createNodosForPublication:(publication)=>{
-            contador ++
+      
             let publicacion  = document.createElement("article")
             let encabezado = document.createElement("div")
             let titulo = document.createElement("h2")
@@ -99,6 +99,7 @@ const  animations = {
             publicacion.className = "publicacion cursor-pointer"
             categoria.className = "tema"
             fecha.className = "fecha"
+            encabezado.style.backgroundImage = "url("+urlBaseImages+urlCarpetaImagenesArticulos+publication.imgPortada+")"
             titulo.innerText = publication.titulo
             categoria.innerText = publication.categoria
             intro.innerText = publication.introducion

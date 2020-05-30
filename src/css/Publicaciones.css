@@ -1,3 +1,6 @@
+#publicaciones{
+    display: none;
+}
 #contenerdor-publicaciones{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
@@ -22,7 +25,7 @@
     padding-right: 15px;
 }
 .encabezado{
-    background-image: url('../imagenes/imagenes-articulos/img-prba.jpg');
+    
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
