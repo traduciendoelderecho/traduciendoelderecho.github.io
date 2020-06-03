@@ -5,7 +5,6 @@
         <title>Traduciendo el derecho</title>
         <link rel="stylesheet"  type="text/css" href="./src/css/style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     </head>
     <body>
         <div id="container" >
@@ -15,7 +14,7 @@
                     <div id="opciones-menu" class="titulo">
                         <ul>
                             <li class="item-menu cursor-pointer" data-tipo="desktop" id="contacto-menu-app-option">Contacto <div class="indicador-selected"></div></li>
-                            <li class="item-menu cursor-pointer" data-tipo="desktop" id="nosotros-menu-app-option">Nosotros <div class="indicador-selected"></div></li>
+                            <li class="item-menu cursor-pointer" data-tipo="desktop" id="nosotros-menu-app-option">Conócenos <div class="indicador-selected"></div></li>
                             <li class="item-menu cursor-pointer" data-tipo="desktop" id="publicaciones-menu-app-option">Publicaciones <div class="indicador-selected"></div></li>
                         </ul>
                     </div>
@@ -24,13 +23,12 @@
             <div id="contenido">
                 <div id="publicaciones"> 
                     <div id="cont-items-menu-publicaciones">
-                        <div id="items-menu-publicaciones">
-                            <ul class="titulo">
-                                <li class="item-menu-publicaciones cursor-pointer">Recientes <div class=" backGroundBlue indicador-selected"></div></li>
-                                <li class="item-menu-publicaciones cursor-pointer">Más vistos <div class=" backGroundBlue indicador-selected"></div></li>
-                                <li class="item-menu-publicaciones cursor-pointer">Más relevantes <div class=" backGroundBlue indicador-selected"></div></li>
-                                <li class="item-menu-publicaciones cursor-pointer">Todos <div class=" backGroundBlue indicador-selected"></div></li>
-                            </ul>
+                        <div id="items-menu-publicaciones" class="titulo">
+                                <div class="item-menu-publicaciones cursor-pointer">Recientes <div class="backGroundBlue indicador-selected"></div></div>
+                                <div class="item-menu-publicaciones cursor-pointer">#TraduTemas <div class="backGroundBlue indicador-selected"></div></div>
+                                <div class="item-menu-publicaciones cursor-pointer">#TraduArtículos <div class="backGroundBlue indicador-selected"></div></div>
+                                <div class="item-menu-publicaciones cursor-pointer">#TraduLey <div class="backGroundBlue indicador-selected"></div></div>
+                                <div class="item-menu-publicaciones cursor-pointer">#TraduInspiración <div class="backGroundBlue indicador-selected"></div></div>
                         </div>
                         <div id="cont-form-filter">
                             <div id="form-filter">
@@ -38,12 +36,6 @@
                                     <div id="cont-items-Combo">
                                         <div id="item-combo-categorias-selected">Todo</div>
                                         <div id="cont-items-categorigas">
-                                            <div class="loader" id="loader-6">
-                                                <span></span>
-                                                <span></span>
-                                                <span></span>
-                                                <span></span>
-                                            </div>
                                             <div id="cont-items-cat">
                                             </div>
                                         </div>
@@ -74,6 +66,14 @@
                 <div id="btnNotros" data-tipo="movil" class="items-menu-movil">
                 </div>
             </div>
+        <footer>
+            <span>Desarrollado por : <a target="_blank" href="https://frankcv12345.github.io/" > FrankCV12345 </a></span>
+            <span id="redes-sociales">
+               <a target="_blank" href="https://www.facebook.com/TraduciendoElDerecho"> <img style="background-color: white;" src="./src/imagenes/icons/facebook.svg"/></a>
+               <a target="_blank" href="https://www.linkedin.com/in/traduciendo-el-derecho-7895481ab/"> <img src="./src/imagenes/icons/linkedin.svg"/></a>
+               <a target="_blank" href="https://www.instagram.com/traduciendoelderecho/"> <img src="./src/imagenes/icons/instagram.svg"/></a> 
+            </span>
+        </footer>
         </div>
         <div id="cont-loader">
             <div id="logotipoAndLoader">
@@ -84,10 +84,11 @@
                     <div class="part2 p3"></div>
                     <div class="part2 p4"></div>
                     <div class="part2 p5"></div>
-                
                 </div>
             </div>    
         </div>
+        <script type="text/javascript" src="./src/js/variablesGlobales.js"></script>
+        <script type="text/javascript" src="./src/js/Utilitarios.js"></script>
         <script type="text/javascript" src="./src/js/ApiRequest.js"></script>
         <script type="text/javascript" src="./src/js/Animations.js"></script>
         <script type="text/javascript" src="./src/js/main.js"></script>
