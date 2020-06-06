@@ -1,0 +1,37 @@
+#publicacionDetalle{
+    display: none;
+    grid-template-columns: auto 320px;
+    grid-template-areas: "publicacion recomendado";
+    padding: 5px;
+    line-height: 1.5;
+}
+#detallePublicacion{
+    grid-area: publicacion;
+    
+}
+#detallePublicacion img{
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+    display: block;
+}
+#detallePublicacion p{
+    text-align: justify;
+}
+#recomendados{
+    grid-area: recomendado;
+}
+#tablaContenido{
+    background-color: azure;
+    border: solid 1px black;
+}
+
+@media only screen and (max-width: 750px) {
+    #publicacionDetalle{
+        grid-template-columns: auto ;
+        grid-template-areas: "publicacion" "recomendado";
+    }
+    #detallePublicacion img{
+        max-width: 320px;
+    }
+}

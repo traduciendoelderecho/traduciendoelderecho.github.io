@@ -17,7 +17,9 @@
     margin-top: 2.5px;
 }
 #form-filter{
-    display: none;
+    display: inline-grid;
+    grid-template-columns: 150px auto;
+    grid-template-areas: "combo input";
     float: left;
     width: calc(100% - 35px);
     background-color: #ECECEC;
@@ -25,7 +27,8 @@
     margin-top: 2.5px;
 }
 #inputbuscarPublicaciones{
-    width: calc(100% - 110px);
+    width: 100%;
+    grid-area: input;
 }
 .inptsFiltros{
     border: none;
@@ -37,9 +40,9 @@
 #comboCategorias{
     display:inline-grid;
     grid-template-columns: auto 35px;
+    grid-area: combo;
     float: left;
     height: 100%;
-    width: 100px;
     font-size: 12px;
     position: relative;
    

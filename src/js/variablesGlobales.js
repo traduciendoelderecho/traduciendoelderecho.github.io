@@ -1,5 +1,6 @@
 var dataPublicationsSmall = null
-
+var publicationSelected = null
+const urlBaseDB = "http://192.168.1.38:5500"
 const formFilter = document.getElementById("form-filter")
 const contFormFilter = document.getElementById("cont-form-filter")
 const logoBuscar =  document.getElementById("logoBuscar")
@@ -10,7 +11,8 @@ const itemsMenuPublicaciones  = document.getElementsByClassName('item-menu-publi
 const contPublicaciones = document.getElementById("contenerdor-publicaciones")
 const contCategorias = document.getElementById("cont-items-cat")
 const comboCategorias = document.getElementById("comboCategorias")
-
+const loaderApp =  document.getElementById("cont-loader")
+const contRecomendados = document.getElementById("recomendados")
 const urlBaseImages = "../src/imagenes"
 const urlCarpetaImagenesArticulos = "/imagenes-articulos/"
 const urlCarpetaIconos = "/icons/"
@@ -20,7 +22,8 @@ const publicacionesOption ={
         {srcDom : document.getElementById("publicaciones-menu-app-option")},
         {srcDom : document.getElementById("btnHome")}   
     ],
-    srcContent: document.getElementById("publicaciones") 
+    srcContent: document.getElementById("publicaciones"),
+    nombre:"/"  
 } 
 
 const nosotrosOption = {
@@ -28,14 +31,20 @@ const nosotrosOption = {
         {srcDom : document.getElementById("nosotros-menu-app-option")},
         {srcDom : document.getElementById("btnNotros")}
     ],
-    srcContent: document.getElementById("nosotros") 
+    srcContent: document.getElementById("nosotros") ,
+    nombre:"conocenos" 
 }
 const contactoOption = {
     buttons: [
         {srcDom : document.getElementById("contacto-menu-app-option")},
         {srcDom : document.getElementById("btnContacto")}
     ],
-    srcContent: document.getElementById("contacto") 
+    srcContent: document.getElementById("contacto"),
+    nombre:"contacto" 
+}
+const publicacionDetallecont = {
+    buttons:publicacionesOption.buttons,
+    srcContent: document.getElementById("publicacionDetalle") 
 }
 
 const collectionItemsMenu =[publicacionesOption,nosotrosOption,contactoOption]

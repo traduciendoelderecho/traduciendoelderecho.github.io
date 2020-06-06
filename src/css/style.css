@@ -3,6 +3,7 @@
 @import 'Menu-movil.css';
 @import 'Publicaciones.css';
 @import 'loaderApp.css';
+@import 'DetallePublicacion.css';
 @font-face {
     font-family: Roboto;
     src: url(../fonts/Roboto/Roboto-Regular.ttf);
@@ -14,6 +15,7 @@ body,html{
     height: 100%;
     max-width: 1920px;
     margin: auto;
+    scroll-behavior: smooth;
 }
 #container{
     height: 100%;
@@ -81,9 +83,6 @@ body,html{
     #cont-items-menu-publicaciones{
         display: block;
         height: auto;
-    }
-    #form-filter{
-        display: block;
     }
     #logoBuscar{
         background-color: #ECECEC;

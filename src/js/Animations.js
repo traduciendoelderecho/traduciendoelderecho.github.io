@@ -13,10 +13,7 @@ const  animations = {
             }
         },
         createItemsForCateories : (data,containerItems) => {
-            
-
-                while(containerItems.firstChild){
-                    console.log(containerItems)         
+                while(containerItems.firstChild){      
                     containerItems.removeChild(containerItems.firstChild)
                 }
                 let divTextTodo = animations.createNodoForItemCategori({categoria:"Todo"})
@@ -38,7 +35,6 @@ const  animations = {
                         let categoria =  divText.firstChild.nextSibling.innerText
                         document.getElementById("item-combo-categorias-selected").innerText = categoria
                         divText.firstChild.style.backgroundImage = "url("+urlBaseImages+urlCarpetaIconos+"radio_button_checked.svg)"
-
                         let  publicacionesfiltradas = itemMenuPublications.categorias
                             .find( i => i.categoria == categoria).publicaciones
                             .map(e => itemMenuPublications.publicaciones[e])
@@ -65,22 +61,10 @@ const  animations = {
         },
         selectedtitles : (titles)=>{
             for(let  i = 0 ; i < titles.length;i++){
-                titles[i].addEventListener('click',(e)=>{
-                    let elemtoSelecionado =  e.srcElement;
-                   
-                    animations.desSelectItemMenu(menuAppSelected.buttons)
-                    menuAppSelected.srcContent.style.display ="none"
-                    
-                    collectionItemsMenu.forEach(item => {
-                        item.buttons.forEach( subitem =>{
-                            if(elemtoSelecionado == subitem.srcDom){
-                                menuAppSelected = item
-                                animations.resaltarItemMenuSelected(menuAppSelected.buttons)
-                                menuAppSelected.srcContent.style.display = "block"
-                            }
-                        })
+                titles[i].buttons.forEach( b => {
+                    b.srcDom.addEventListener('click',function(){
+                        window.location = urlBaseDB+"/?seccion="+titles[i].nombre
                     })
-                    
                 })
             }
         },
@@ -90,7 +74,7 @@ const  animations = {
                 if(tipo == "desktop"){
                         animations.resaltarItemMenu(item.srcDom)
                  }else{
-                    item.srcDom.style.opacity = "1"
+                        item.srcDom.style.opacity = "1"
                  }
             })
         },
@@ -104,6 +88,7 @@ const  animations = {
                  }
             })
         },resaltarItemMenu:(item)=>{
+            
             item.style.fontWeight = "700"
             item.firstChild.nextSibling.style.display ="block"
         },noResltarItemMenu:(item)=>{
@@ -112,8 +97,20 @@ const  animations = {
         },
         addPublicationsToContainer:(data,container)=>{
             container.innerHTML = ""
-            data.map( (publicacion) => animations.createNodosForPublication(publicacion))
-            .forEach( elemnt => container.appendChild(elemnt))
+            if(data.length == 0){
+                container.innerHTML = "<h2>No se encontraron resultados para  la busqueda</h2>"
+            }else{
+                data.map( (publicacion) => {
+                   let  p = animations.createNodosForPublication(publicacion)
+                   p.addEventListener('click',function(){
+                        let id  = parseInt(this.dataset.id)
+                        id  =  0
+                        window.location=urlBaseDB+"/?publicacion="+id
+                   })
+                   return p
+                }).forEach( elemnt => container.appendChild(elemnt))
+            }
+            
         },
         createNodosForPublication:(publication)=>{
             let publicacion  = document.createElement("article")
@@ -145,5 +142,99 @@ const  animations = {
             publicacion.appendChild(intro)
             publicacion.appendChild(fecha)
             return publicacion
-        }
+        },
+        openDetailsPublication: (publicacion)=>{
+            let mapa = { 
+                    titulo : {
+                        nombre : null, 
+                        id : null},
+                    intro : "#intro", 
+                    temas : []
+                }
+            const contPublicacion = document.getElementById("detallePublicacion")
+            let titulo =  document.createElement("h1")
+            let espacioParaMapa =  document.createElement("div")
+            let img = document.createElement("img")
+            let Intro =  document.createElement("div")
+            Intro.id = "intro"
+            let autores = document.createElement("div")
+            let fecha = document.createElement("div")
+            img.src = urlBaseImages + urlCarpetaImagenesArticulos + publicacion.img
+            
+            publicacion.introducion.forEach( e => {
+                let parrafo =  document.createElement("p")
+                parrafo.innerText = e.parrafo
+                Intro.appendChild(parrafo)
+            })
+            let idTitulo  = utlitarios.createID(publicacion.tituloPublicacion)
+            mapa.titulo.id = "#"+idTitulo
+            mapa.titulo.nombre = publicacion.tituloPublicacion
+            titulo.id = idTitulo
+            titulo.innerText = publicacion.tituloPublicacion
+            contPublicacion.appendChild(espacioParaMapa)
+            contPublicacion.appendChild(titulo)
+            contPublicacion.appendChild(img)
+            contPublicacion.appendChild(Intro)
+            let contadorSubTemas = 0;
+            publicacion.temas.map( e => {
+                contadorSubTemas++
+                let cont = document.createElement("div")
+                let subTitulo =  document.createElement("h2")
+                subTitulo.innerText = contadorSubTemas +". "+e.subtitulo
+                let idSubtituto = utlitarios.createID(e.subtitulo)
+                subTitulo.id = idSubtituto
+                mapa.temas.push({titulo : e.subtitulo,id : "#"+idSubtituto})
+                cont.appendChild(subTitulo)
+                e.parrafos.forEach(t => {
+                    let parrafo =  document.createElement("p")
+                    parrafo.innerText = t.parrafo
+                    cont.appendChild(parrafo)
+                })
+                return cont
+            }).forEach( r => contPublicacion.appendChild(r))
+            espacioParaMapa.appendChild(animations.crearMapaDePublicacion(mapa))   
+            autores.innerText = "Publicado por : "+publicacion.autores.map(e => e.nombre).join()  
+            fecha.innerText ="Fecha : " + publicacion.fecha
+            contPublicacion.appendChild(autores)
+            contPublicacion.appendChild(fecha)
+            
+            document.getElementById("publicacionDetalle").style.display = "grid"
+        },
+        crearMapaDePublicacion : (mapa)=>{
+
+                let contenerdor =  document.createElement("div")
+                
+                let listaContenidoPublicacion = document.createElement("ul")
+                let itemListaTitulotema = document.createElement("li")
+                
+                let titulo = document.createElement("h3")
+                let tituloTema = document.createElement("a")
+                let hRefIntro = document.createElement("a")
+                
+                tituloTema.innerText = mapa.titulo.nombre
+                tituloTema.href = mapa.titulo.id
+                itemListaTitulotema.appendChild(tituloTema)
+
+                titulo.innerText = "Tabla de contenido"
+                contenerdor.id = "tablaContenido"
+                hRefIntro.href = "#intro"
+                hRefIntro.innerText = "Introducion"
+                
+                //agregando hijos
+                contenerdor.appendChild(titulo)  
+                let listaSubTemas = document.createElement("ol")
+                mapa.temas.map( e => {
+                    let aHrf = document.createElement("a")
+                    let item =  document.createElement("li")
+                    aHrf.innerText =  e.titulo
+                    aHrf.href = e.id
+                    aHrf.style.display = "block"
+                    item.appendChild(aHrf)
+                    listaSubTemas.appendChild(item) 
+                })
+                itemListaTitulotema.appendChild(listaSubTemas)
+                listaContenidoPublicacion.appendChild(itemListaTitulotema)
+                contenerdor.appendChild(listaContenidoPublicacion)
+                return contenerdor
+            }
 }
