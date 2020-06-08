@@ -36,9 +36,11 @@ document.getElementById("btnShowItems").addEventListener('click',() => {
 document.getElementById("inputbuscarPublicaciones").addEventListener('input',function(){
           let categoria = document.getElementById("item-combo-categorias-selected").innerText
           if(categoria == "Todo"){
+            contPublicaciones.innerHTML = ""
             animations.addPublicationsToContainer(utlitarios.filtrarPorTitulo(itemMenuPublications.publicaciones,this.value),contPublicaciones)
           }else{
             let publicacionesFiltradas = itemMenuPublications.categorias.find((i) =>  i.categoria == categoria).publicaciones.map(e => itemMenuPublications.publicaciones[e])
+            contPublicaciones.innerHTML = ""
             animations.addPublicationsToContainer(
                         utlitarios.filtrarPorTitulo(publicacionesFiltradas,this.value),
                         contPublicaciones)

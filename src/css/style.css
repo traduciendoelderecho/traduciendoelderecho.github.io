@@ -59,6 +59,9 @@ body,html{
 .cursor-pointer{
     cursor: pointer;
 }
+.text-align-center {
+    text-align: center;
+}
 .backGroundBlue{
     background-color:#00264C !important ;
 }

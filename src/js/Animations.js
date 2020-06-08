@@ -23,6 +23,7 @@ const  animations = {
                     document.getElementById("item-combo-categorias-selected").innerText = categoria
                     divTextTodo.firstChild.style.backgroundImage = "url("+urlBaseImages+urlCarpetaIconos+"radio_button_checked.svg)"
                     let publicacionesfiltradas = itemMenuPublications.publicaciones;
+                    contPublicaciones.innerHTML = ""
                     animations.addPublicationsToContainer(publicacionesfiltradas,contPublicaciones)
                     containerItems.parentNode.style.display = "none"
                 })
@@ -38,6 +39,7 @@ const  animations = {
                         let  publicacionesfiltradas = itemMenuPublications.categorias
                             .find( i => i.categoria == categoria).publicaciones
                             .map(e => itemMenuPublications.publicaciones[e])
+                            contPublicaciones.innerHTML = ""
                         animations.addPublicationsToContainer(publicacionesfiltradas,contPublicaciones)
                         containerItems.parentNode.style.display = "none"
                     })
@@ -96,7 +98,9 @@ const  animations = {
             item.firstChild.nextSibling.style.display ="none"
         },
         addPublicationsToContainer:(data,container)=>{
-            container.innerHTML = ""
+        
+            //container.innerHTML = ""
+            
             if(data.length == 0){
                 container.innerHTML = "<h2>No se encontraron resultados para  la busqueda</h2>"
             }else{
@@ -216,6 +220,7 @@ const  animations = {
                 itemListaTitulotema.appendChild(tituloTema)
 
                 titulo.innerText = "Tabla de contenido"
+                titulo.className = "text-align-center"
                 contenerdor.id = "tablaContenido"
                 hRefIntro.href = "#intro"
                 hRefIntro.innerText = "Introducion"

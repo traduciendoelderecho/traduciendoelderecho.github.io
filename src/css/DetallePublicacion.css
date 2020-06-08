@@ -1,13 +1,12 @@
 #publicacionDetalle{
     display: none;
-    grid-template-columns: auto 320px;
+    grid-template-columns: auto 350px;
     grid-template-areas: "publicacion recomendado";
     padding: 5px;
     line-height: 1.5;
 }
 #detallePublicacion{
     grid-area: publicacion;
-    
 }
 #detallePublicacion img{
     width: 100%;
@@ -16,7 +15,7 @@
     display: block;
 }
 #detallePublicacion p{
-    text-align: justify;
+    color: #696969;
 }
 #recomendados{
     grid-area: recomendado;

@@ -81,6 +81,7 @@ const utlitarios = {
         request.getData((response)=>{   
             dataPublicationsSmall  = JSON.parse(response)
             animations.resaltarItemMenu(itemMenuPublications.button)
+            contPublicaciones.innerHTML = ""
             animations.addPublicationsToContainer(itemMenuPublications.filtro(dataPublicationsSmall),contPublicaciones)
             animations.resaltarItemMenuSelected(menuAppSelected.buttons)
             if(itemMenuPublications.categorias.length == 0){
@@ -100,9 +101,10 @@ const utlitarios = {
             (response)=>{
                 dataPublicationsSmall  = JSON.parse(response)
                 animations.resaltarItemMenu(itemMenuPublications.button)
+                contPublicaciones.innerHTML = ""
                 animations.addPublicationsToContainer(itemMenuPublications.filtro(dataPublicationsSmall),contPublicaciones)
                 animations.resaltarItemMenuSelected(menuAppSelected.buttons)
-                let recomendados = dataPublicationsSmall.filter(e => e.tipopublicaion == publicacion.tipo.tipoPublicacion && e.id !== publicacion.id).reverse()
+                let recomendados = dataPublicationsSmall.filter(e => e.tipopublicaion == publicacion.tipo.tipoPublicacion && e.id !== publicacion.id).reverse()    
                 animations.addPublicationsToContainer(recomendados.slice(recomendados.length - 4),contRecomendados)
             },
             urlBaseDB+"/src/js/data-publications-small.json"
