@@ -73,10 +73,7 @@ const utlitarios = {
                 menuAppSelected = publicacionesOption
                 window.location=urlBaseDB
                 break
-        }
-        
-       
-        
+        } 
     },
     loadDefault : () => {
         request.getData((response)=>{   
@@ -95,7 +92,7 @@ const utlitarios = {
             loaderApp.style.display = "none"    
                     
         },
-            urlBaseDB+"/src/js/data-publications-small.json"
+            urlJsonSmallPublications
         )
     },getPublicationsSmall : (publicacion) => {
         request.getData(
@@ -108,7 +105,7 @@ const utlitarios = {
                 let recomendados = dataPublicationsSmall.filter(e => e.tipopublicaion == publicacion.tipo.tipoPublicacion && e.id !== publicacion.id).reverse()    
                 animations.addPublicationsToContainer(recomendados.slice(recomendados.length - 4),contRecomendados)
             },
-            urlBaseDB+"/src/js/data-publications-small.json"
+            urlJsonSmallPublications
         )
     },
     createID : (texto)=>{

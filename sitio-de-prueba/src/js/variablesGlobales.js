@@ -1,6 +1,7 @@
 var dataPublicationsSmall = null
 var publicationSelected = null
-const urlBaseDB = "http://192.168.1.38:5500"
+const urlBaseDB = "http://192.168.1.38:5500/sitio-de-prueba"
+const urlJsonSmallPublications = urlBaseDB+"/src/js/data-publications-small.json"
 const formFilter = document.getElementById("form-filter")
 const contFormFilter = document.getElementById("cont-form-filter")
 const logoBuscar =  document.getElementById("logoBuscar")
@@ -13,7 +14,7 @@ const contCategorias = document.getElementById("cont-items-cat")
 const comboCategorias = document.getElementById("comboCategorias")
 const loaderApp =  document.getElementById("cont-loader")
 const contRecomendados = document.getElementById("recomendados")
-const urlBaseImages = "../src/imagenes"
+const urlBaseImages = "../sitio-de-prueba/src/imagenes"
 const urlCarpetaImagenesArticulos = "/imagenes-articulos/"
 const urlCarpetaIconos = "/icons/"
 const subtituloNosotros = document.querySelectorAll(".cont-items-nosotros .subtitulo")
