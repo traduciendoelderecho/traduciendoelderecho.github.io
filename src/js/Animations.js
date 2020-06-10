@@ -241,5 +241,50 @@ const  animations = {
                 listaContenidoPublicacion.appendChild(itemListaTitulotema)
                 contenerdor.appendChild(listaContenidoPublicacion)
                 return contenerdor
+            },
+    ShowOrCloseInfo : (elemnt) => { 
+        if(elemnt == itemNosotrosSelected){
+            animations.closeItemNosotros(elemnt)
+            itemNosotrosSelected =  null
+        }else{
+            animations.showItemItemNosotros(elemnt)
+            if(itemNosotrosSelected !== null){
+                animations.closeItemNosotros(itemNosotrosSelected)
             }
+            itemNosotrosSelected =  elemnt
+        }
+    
+    
+    },
+    closeItemNosotros : (elemnt) => {
+        let arrow = elemnt.querySelector(".arrow")
+        let info = elemnt.parentNode.querySelector(".info")
+        arrow.style.backgroundImage =  "url("+urlBaseImages+urlCarpetaIconos+"/expand_more.svg)"
+        arrow.style.transform = "rotate(0deg)" 
+        elemnt.style.backgroundColor = "transparent"
+        elemnt.style.color = "black"
+        info.style.height = "0"
+    },
+    showItemItemNosotros : (elemnt) => {
+        let altoAnchoVentana = utlitarios.getWithAndHeigthOfWindow()
+        let arrow = elemnt.querySelector(".arrow")
+        let info = elemnt.parentNode.querySelector(".info")
+        let alturaImg = (elemnt.parentNode.querySelector(".avatar") !== null ) ? elemnt.parentNode.querySelector(".avatar").clientHeight : null
+        let alturaParrafo =  elemnt.parentNode.querySelector("p").clientHeight
+
+        let alturaForInfoDiv = 0
+
+        arrow.style.backgroundImage = "url("+urlBaseImages+urlCarpetaIconos+"/expand_more_white.svg)"
+        arrow.style.transform = "rotate(180deg)"
+        elemnt.style.backgroundColor = "#0d3a67"
+        elemnt.style.color = "white"
+        if(altoAnchoVentana.ancho < 750){
+            alturaForInfoDiv = ( alturaImg == null ) ? alturaParrafo : alturaImg + alturaParrafo
+        }else{
+            
+            alturaForInfoDiv = ( alturaImg == null) ? alturaParrafo : utlitarios.calculaMayor(alturaParrafo,alturaImg)
+        }
+        info.style.height = (alturaForInfoDiv + 10)+"px"
+        
+    }
 }

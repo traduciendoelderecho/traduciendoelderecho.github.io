@@ -112,6 +112,35 @@ const utlitarios = {
     },
     createID : (texto)=>{
         return Array.from(texto,i => (i == " ") ? "" : i).join("")
+    },
+    getWithAndHeigthOfWindow : () => {
+        let tam = {alto:0,ancho:0};
+        if (typeof window.innerWidth != 'undefined')
+        {   
+            tam.alto = window.innerHeight
+            tam.ancho = window.innerWidth
+        }
+        else if (typeof document.documentElement != 'undefined'
+            && typeof document.documentElement.clientWidth !=
+            'undefined' && document.documentElement.clientWidth != 0)
+        {
+            tam.alto = document.documentElement.clientHeight
+            tam.ancho = document.documentElement.clientWidth
+        }
+        else   {
+            tam.alto = document.getElementsByTagName('body')[0].clientHeight
+            tam.ancho = document.getElementsByTagName('body')[0].clientWidth
+        }
+        return tam;
+    },
+    calculaMayor : (num1 ,num2) => {
+        if(num1 > num2){
+            return num1
+        }else if( num1 ==  num2){
+            return  num1
+        }else{
+            return num2
+        }
     }
 
 }

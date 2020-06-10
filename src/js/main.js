@@ -46,5 +46,8 @@ document.getElementById("inputbuscarPublicaciones").addEventListener('input',fun
                         contPublicaciones)
         }
 })
-
-
+Array.prototype.map.call(subtituloNosotros,(item) => {
+    item.addEventListener('click',function(){
+        animations.ShowOrCloseInfo(this)
+    })
+})

@@ -4,10 +4,11 @@
 @import 'Publicaciones.css';
 @import 'loaderApp.css';
 @import 'DetallePublicacion.css';
+@import 'Nosotros.css';
 @font-face {
-    font-family: Roboto;
-    src: url(../fonts/Roboto/Roboto-Regular.ttf);
-  }
+  font-family: Oswald;
+  src: url(../fonts/Oswald/Oswald-Regular.ttf);
+}
 body,html{
     font-family: 'Roboto', sans-serif;
     padding: 0;
@@ -16,12 +17,27 @@ body,html{
     max-width: 1920px;
     margin: auto;
     scroll-behavior: smooth;
+    color:#696969;
+}
+.titulo {
+    font-family: Oswald;
+    color: black;
+}
+.transition{
+    transition: height 0.5s,transform 0.5s;
+}
+.display-none{
+    display: none;
+}
+h1,h2,h3,h4,h5{
+    color: black;
 }
 #container{
     height: 100%;
 }
 #contenido{
     width: 90%;
+    min-height: 100%;
     margin: auto;
 }
 #nosotros,#contacto{

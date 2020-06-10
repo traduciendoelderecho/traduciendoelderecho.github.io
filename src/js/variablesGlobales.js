@@ -16,6 +16,9 @@ const contRecomendados = document.getElementById("recomendados")
 const urlBaseImages = "../src/imagenes"
 const urlCarpetaImagenesArticulos = "/imagenes-articulos/"
 const urlCarpetaIconos = "/icons/"
+const subtituloNosotros = document.querySelectorAll(".cont-items-nosotros .subtitulo")
+
+var itemNosotrosSelected = null
 
 const publicacionesOption ={
     buttons: [
