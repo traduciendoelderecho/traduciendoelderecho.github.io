@@ -262,7 +262,7 @@ const  animations = {
         arrow.style.backgroundImage =  "url("+urlBaseImages+urlCarpetaIconos+"/expand_more.svg)"
         arrow.style.transform = "rotate(0deg)" 
         elemnt.style.backgroundColor = "transparent"
-        elemnt.style.color = "black"
+        elemnt.style.color = "#696969"
         info.style.height = "0"
     },
     showItemItemNosotros : (elemnt) => {

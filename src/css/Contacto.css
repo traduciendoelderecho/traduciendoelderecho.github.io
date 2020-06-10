@@ -1,0 +1,33 @@
+#contacto{
+    width: 100%;
+    top: 25%;
+    position: absolute;
+}
+#contacto .icon {
+    width: 30px;
+    height: 30px;
+}
+#contenido-contacto{
+    max-width: 800px;
+    height: 300px;
+    margin: auto;
+}
+.cont-item-contacto{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: grid;
+    grid-template-columns: 30px auto;
+    align-items: center;
+    width: 70%
+}
+.cont-item-contacto a {
+    color: #008CDB;
+    margin-left: 5px;
+}
+@media only screen and (max-width: 750px) {
+    .cont-item-contacto{
+        width: 90%;
+    }
+}

@@ -59,6 +59,7 @@ const utlitarios = {
                         menuAppSelected = nosotrosOption
                         loaderApp.style.display = "none"
                     }else if(valor.valor == "contacto"){
+                        document.querySelector("#redes-sociales").style.display =  "none"
                         contactoOption.srcContent.style.display = "block"
                         loaderApp.style.display = "none"
                         menuAppSelected = contactoOption
