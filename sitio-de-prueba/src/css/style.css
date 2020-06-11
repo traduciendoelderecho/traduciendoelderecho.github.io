@@ -47,28 +47,6 @@ h1,h2,h3,h4,h5{
 #nosotros,#contacto{
     display: none;
 }
-/* Sub titulos en publicaciones */
-#cont-items-menu-publicaciones{
-    display: grid;
-    width: 100%;
-    grid-template-columns: 2fr 6fr 2fr;
-    grid-template-areas:"espacio opciones-publicaiones search";
-}
-#items-menu-publicaciones{
-    display: flex;
-    flex-wrap: wrap;
-    grid-area: opciones-publicaiones;
-}
-.item-menu-publicaciones{
-    position: relative;
-    margin-left:5px;
-    font-size: 20px !important;
-    color: #00264C;
-    letter-spacing: 1px;
-}
-#cont-form-filter{
-    grid-area: search;
-}
 #linea{
     background-color:#00264C;
     height: 2px;
@@ -92,23 +70,15 @@ h1,h2,h3,h4,h5{
     #contenido{
         width: 99%;
     }
-    #cont-items-menu-publicaciones{
-        grid-template-columns: 0fr 8fr auto;
-    }
   }
 
   @media only screen and (max-width: 750px) {
-    
-    
     #contenido{
         width: 99%;
     }
     #cont-items-menu-publicaciones{
         display: block;
         height: auto;
-    }
-    #logoBuscar{
-        background-color: #ECECEC;
     }
     footer{
         margin-bottom: 50px;

@@ -1,50 +1,74 @@
+#cont-items-menu-publicaciones{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 0fr 7fr auto;
+    grid-template-areas:"espacio opciones-publicaiones search";
+    padding: 5px;
+    box-sizing: border-box;
+    align-items: center;
+}
+#items-menu-publicaciones{
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: opciones-publicaiones;
+}
+.item-menu-publicaciones{
+    position: relative;
+    margin-left:5px;
+    font-size: 20px !important;
+    color: #00264C;
+    letter-spacing: 1px;
+}
+
 #cont-form-filter{
     width: 100%;
     height: 100%;
-    display: inline-block;
+    max-height: 40px;
+    display: inline-grid;
+    grid-template-columns: auto 35px;
+    align-items: center;
+    background-color:#e1e9ee;
+    color: black;
+    padding: 2px;
+    grid-area: search;
 }
 #logoBuscar{
     background-image: url("../imagenes/icons/search-dark.svg");
     width: 35px;
     height: 35px;
-    color: white;
     display: inline-block;
     background-position: center;
     background-repeat: no-repeat;
-    float: right;
-    margin-left: -4px;
-    margin-top: 2.5px;
 }
 #form-filter{
     display: inline-grid;
-    grid-template-columns: 150px auto;
+    grid-template-columns: 120px auto;
     grid-template-areas: "combo input";
+    align-items: center;
     float: left;
-    width: calc(100% - 35px);
-    background-color: #ECECEC;
-    height: 35px;
-    margin-top: 2.5px;
+    width: 100%;
+    height: 100%;
 }
 #inputbuscarPublicaciones{
     width: 100%;
+    height: 100%;
     grid-area: input;
 }
 .inptsFiltros{
     border: none;
-    height: 30px;
     font-family: Roboto;
     font-size: 13px;
-    background-color: transparent;
+    background-color: white;
 }
 #comboCategorias{
     display:inline-grid;
     grid-template-columns: auto 35px;
     grid-area: combo;
     float: left;
+    align-items: center;
     height: 100%;
     font-size: 12px;
     position: relative;
-   
 }
 #btnShowItems{
     background-image: url("../imagenes/icons/expand_more.svg");
@@ -58,19 +82,19 @@
     background-image: url("../imagenes/icons/radio_button_unchecked.svg");
     background-position: center;
     background-repeat: no-repeat;
+    background-size: 100%;
     font-size:11px;
 }
 #item-combo-categorias-selected{
     text-align: center;
     width: 100%;
-    margin-top: 10px;
 }
 
 .items-combo-categorias{
     width: 100%;
     text-align: center;
     display: inline-grid;
-    grid-template-columns: 1fr 9fr;
+    grid-template-columns: 2fr 8fr;
 }
 .items-combo-categorias:hover{
     background-color: darkcyan;
