@@ -1,17 +1,4 @@
-let banderaFiltro = false;
 const  animations = {
-        showOrCloseFormFilter: ( formFilter , contFormFilter,logoBuscar,logo) =>{
-            if(banderaFiltro){        
-                formFilter.style.display="none"
-                logoBuscar.style.backgroundColor = "transparent"
-                logo.style.display = "inline-block"
-                banderaFiltro = false
-            }else{
-                formFilter.style.display="inline-block"
-                logoBuscar.style.backgroundColor = "#ECECEC"
-                banderaFiltro=true
-            }
-        },
         createItemsForCateories : (data,containerItems) => {
                 while(containerItems.firstChild){      
                     containerItems.removeChild(containerItems.firstChild)

@@ -4,8 +4,6 @@ document.addEventListener('DOMContentLoaded',()=>{
 
 animations.selectedtitles(collectionItemsMenu)
 
-
-document.getElementById("logoBuscar").addEventListener('click',() => animations.showOrCloseFormFilter(formFilter,contFormFilter,logoBuscar,logo))   
 for(let i = 0 ; i < itemsMenuPublicaciones.length ; i++){
         itemsMenuPublicaciones[i].addEventListener('click',function(){
             animations.noResltarItemMenu(itemMenuPublications.button)
