@@ -1,6 +1,6 @@
 var dataPublicationsSmall = null
 var publicationSelected = null
-const urlBaseDB = "https://traduciendoelderecho.github.io/sitio-de-prueba"
+const urlBaseDB = "http://192.168.1.38:5500/sitio-de-prueba"
 const urlJsonSmallPublications = urlBaseDB+"/src/js/data-publications-small.json"
 const formFilter = document.getElementById("form-filter")
 const contFormFilter = document.getElementById("cont-form-filter")
