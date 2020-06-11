@@ -7,13 +7,13 @@ const  animations = {
                 }
                 
                 let divTextTodo = animations.createNodoForItemCategori({categoria:"Todo"})
-                divTextTodo.firstChild.style.backgroundImage = "url("+urlBaseImages+urlCarpetaIconos+"radio_button_checked.svg)"
+                divTextTodo.firstChild.style.backgroundImage = "url("+urlBaseDB+urlBaseImages+urlCarpetaIconos+"radio_button_checked.svg)"
                     
                 divTextTodo.addEventListener('click',(e)=>{
                     animations.limpiaFiltros()
                     let categoria =  divTextTodo.firstChild.nextSibling.innerText
                     itemSelected.innerText = categoria
-                    divTextTodo.firstChild.style.backgroundImage = "url("+urlBaseImages+urlCarpetaIconos+"radio_button_checked.svg)"
+                    divTextTodo.firstChild.style.backgroundImage = "url("+urlBaseDB+urlBaseImages+urlCarpetaIconos+"radio_button_checked.svg)"
                     let publicacionesfiltradas = itemMenuPublications.publicaciones;
                     contPublicaciones.innerHTML = ""
                     animations.addPublicationsToContainer(publicacionesfiltradas,contPublicaciones)
@@ -26,7 +26,7 @@ const  animations = {
                         animations.limpiaFiltros()
                         let categoria =  divText.firstChild.nextSibling.innerText
                         itemSelected.innerText = categoria
-                        divText.firstChild.style.backgroundImage = "url("+urlBaseImages+urlCarpetaIconos+"radio_button_checked.svg)"
+                        divText.firstChild.style.backgroundImage = "url("+urlBaseDB+urlBaseImages+urlCarpetaIconos+"radio_button_checked.svg)"
                         let  publicacionesfiltradas = itemMenuPublications.categorias
                             .find( i => i.categoria == categoria).publicaciones
                             .map(e => itemMenuPublications.publicaciones[e])
@@ -48,7 +48,7 @@ const  animations = {
         },limpiaFiltros : ()=>{
             let items  = document.getElementsByClassName("items-combo-categorias");
             for(let i = 0  ; i < items.length; i++){
-                    items[i].firstChild.style.backgroundImage = "url("+urlBaseImages+urlCarpetaIconos+"radio_button_unchecked.svg)"
+                    items[i].firstChild.style.backgroundImage = "url("+urlBaseDB+urlBaseImages+urlCarpetaIconos+"radio_button_unchecked.svg)"
             }
         },
         selectedtitles : (titles)=>{
@@ -117,7 +117,7 @@ const  animations = {
             publicacion.className = "publicacion cursor-pointer"
             
             fecha.className = "fecha"
-            encabezado.style.backgroundImage = "url("+urlBaseImages+urlCarpetaImagenesArticulos+publication.imgPortada+")"
+            encabezado.style.backgroundImage = "url("+urlBaseDB+urlBaseImages+urlCarpetaImagenesArticulos+publication.imgPortada+")"
             titulo.innerText = publication.titulo
             
             intro.innerText = publication.introducion
@@ -153,7 +153,7 @@ const  animations = {
             Intro.id = "intro"
             let autores = document.createElement("div")
             let fecha = document.createElement("div")
-            img.src = urlBaseImages + urlCarpetaImagenesArticulos + publicacion.img
+            img.src = urlBaseDB+urlBaseImages + urlCarpetaImagenesArticulos + publicacion.img
             
             publicacion.introducion.forEach( e => {
                 let parrafo =  document.createElement("p")
@@ -249,7 +249,7 @@ const  animations = {
     closeItemNosotros : (elemnt) => {
         let arrow = elemnt.querySelector(".arrow")
         let info = elemnt.parentNode.querySelector(".info")
-        arrow.style.backgroundImage =  "url("+urlBaseImages+urlCarpetaIconos+"/expand_more.svg)"
+        arrow.style.backgroundImage =  "url("+urlBaseDB+urlBaseImages+urlCarpetaIconos+"/expand_more.svg)"
         arrow.style.transform = "rotate(0deg)" 
         elemnt.style.backgroundColor = "transparent"
         elemnt.style.color = "#696969"
@@ -264,7 +264,7 @@ const  animations = {
 
         let alturaForInfoDiv = 0
 
-        arrow.style.backgroundImage = "url("+urlBaseImages+urlCarpetaIconos+"/expand_more_white.svg)"
+        arrow.style.backgroundImage = "url("+urlBaseDB+urlBaseImages+urlCarpetaIconos+"/expand_more_white.svg)"
         arrow.style.transform = "rotate(180deg)"
         elemnt.style.backgroundColor = "#0d3a67"
         elemnt.style.color = "white"
