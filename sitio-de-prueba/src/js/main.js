@@ -22,7 +22,7 @@ for(let i = 0 ; i < itemsMenuPublicaciones.length ; i++){
         })
     }
 
-document.getElementById("btnShowItems").addEventListener('click',() => {
+document.getElementById("comboCategorias").addEventListener('click',() => {
         let cont = document.getElementById("cont-items-categorigas")
         if(cont.style.display == "block"){
             cont.style.display = "none"
