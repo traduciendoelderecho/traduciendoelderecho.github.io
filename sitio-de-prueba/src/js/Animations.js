@@ -1,18 +1,22 @@
 const  animations = {
         createItemsForCateories : (data,containerItems) => {
+                let  itemSelected =  document.getElementById("item-combo-categorias-selected");
+                itemSelected.innerText = "Todo"
                 while(containerItems.firstChild){      
                     containerItems.removeChild(containerItems.firstChild)
                 }
+                
                 let divTextTodo = animations.createNodoForItemCategori({categoria:"Todo"})
+                divTextTodo.firstChild.style.backgroundImage = "url("+urlBaseImages+urlCarpetaIconos+"radio_button_checked.svg)"
+                    
                 divTextTodo.addEventListener('click',(e)=>{
                     animations.limpiaFiltros()
                     let categoria =  divTextTodo.firstChild.nextSibling.innerText
-                    document.getElementById("item-combo-categorias-selected").innerText = categoria
+                    itemSelected.innerText = categoria
                     divTextTodo.firstChild.style.backgroundImage = "url("+urlBaseImages+urlCarpetaIconos+"radio_button_checked.svg)"
                     let publicacionesfiltradas = itemMenuPublications.publicaciones;
                     contPublicaciones.innerHTML = ""
                     animations.addPublicationsToContainer(publicacionesfiltradas,contPublicaciones)
-                    containerItems.parentNode.style.display = "none"
                 })
                 containerItems.appendChild(divTextTodo)
 
@@ -21,14 +25,13 @@ const  animations = {
                     divText.addEventListener('click',(e)=>{
                         animations.limpiaFiltros()
                         let categoria =  divText.firstChild.nextSibling.innerText
-                        document.getElementById("item-combo-categorias-selected").innerText = categoria
+                        itemSelected.innerText = categoria
                         divText.firstChild.style.backgroundImage = "url("+urlBaseImages+urlCarpetaIconos+"radio_button_checked.svg)"
                         let  publicacionesfiltradas = itemMenuPublications.categorias
                             .find( i => i.categoria == categoria).publicaciones
                             .map(e => itemMenuPublications.publicaciones[e])
                             contPublicaciones.innerHTML = ""
                         animations.addPublicationsToContainer(publicacionesfiltradas,contPublicaciones)
-                        containerItems.parentNode.style.display = "none"
                     })
                     containerItems.appendChild(divText)
                 })
