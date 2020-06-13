@@ -27,9 +27,8 @@
 }
 .para-definir{
     position: relative;
-    color: blue;
-    text-decoration: underline  blue;
-    background-color: aqua;
+    color: #0b0080;
+    text-decoration: underline  #0b0080;
 }
 .definicion{
     width: 200px;
@@ -47,7 +46,6 @@
     right: 0;
     background-color: white;
     z-index: 10;
-
 }
 .icon-close{
     background-image: url("../imagenes/icons/close.svg");
@@ -60,7 +58,9 @@
     height: 20px;
     border-radius: 10px;
 }
-
+.pie-publicacion{
+    font-weight: 600;
+}
 @media only screen and (max-width: 750px) {
     #publicacionDetalle{
         grid-template-columns: auto ;

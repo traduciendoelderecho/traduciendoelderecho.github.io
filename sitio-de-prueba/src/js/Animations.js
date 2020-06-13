@@ -186,9 +186,11 @@ const  animations = {
                 })
                 return cont
             }).forEach( r => contPublicacion.appendChild(r))
-            espacioParaMapa.appendChild(animations.crearMapaDePublicacion(mapa))   
+            espacioParaMapa.appendChild(animations.crearMapaDePublicacion(mapa))  
+            autores.className = "pie-publicacion" 
             autores.innerText = "Publicado por : "+publicacion.autores.map(e => e.nombre).join()  
             fecha.innerText ="Fecha : " + publicacion.fecha
+            fecha.className = "pie-publicacion"
             contPublicacion.appendChild(autores)
             contPublicacion.appendChild(fecha)
             
@@ -259,9 +261,7 @@ const  animations = {
         let info = elemnt.parentNode.querySelector(".info")
         let alturaImg = (elemnt.parentNode.querySelector(".avatar") !== null ) ? elemnt.parentNode.querySelector(".avatar").clientHeight : null
         let alturaParrafo =  elemnt.parentNode.querySelector("p").clientHeight
-
         let alturaForInfoDiv = 0
-
         arrow.style.backgroundImage = "url("+urlBaseDB+urlBaseImages+urlCarpetaIconos+"/expand_more_white.svg)"
         arrow.style.transform = "rotate(180deg)"
         elemnt.style.backgroundColor = "#0d3a67"
@@ -269,7 +269,6 @@ const  animations = {
         if(altoAnchoVentana.ancho < 750){
             alturaForInfoDiv = ( alturaImg == null ) ? alturaParrafo : alturaImg + alturaParrafo
         }else{
-            
             alturaForInfoDiv = ( alturaImg == null) ? alturaParrafo : utlitarios.calculaMayor(alturaParrafo,alturaImg)
         }
         info.style.height = (alturaForInfoDiv + 10)+"px"
@@ -291,7 +290,6 @@ const  animations = {
         e.appendChild(divDefinicion)
         divDefinicion.style.top = "-"+divDefinicion.clientHeight+"px"
         posicionElemento = divDefinicion.getBoundingClientRect()
-        console.log(posicionElemento)
         if(posicionElemento.left < 0){
             divDefinicion.style.left = 0+"px" 
         }else if(posicionElemento.right < 0){
