@@ -45,10 +45,10 @@ const utlitarios = {
             case 'publicacion':
                     request.getData(
                         (data)=>{
-                            let publicacion = JSON.parse(data)
-                            animations.openDetailsPublication(publicacion)
+                            publicationSelected = JSON.parse(data)
+                            animations.openDetailsPublication(publicationSelected)
                             loaderApp.style.display = "none"
-                            utlitarios.getPublicationsSmall(publicacion)
+                            utlitarios.getPublicationsSmall(publicationSelected)
                         },urlBaseDB+"/src/js/publicaciones/"+valor.valor+".json")
                          menuAppSelected = publicacionDetallecont
                          
@@ -139,6 +139,23 @@ const utlitarios = {
         }else{
             return num2
         }
+    },
+    showDefinicion : () => {
+        let e  = window.event.target
+        if(e.querySelector(".definicion") == null && e.className == "para-definir cursor-pointer"){
+           animations.createdDefinicion(e)
+        }
+    },
+    searchDefinitions : (parrafo,definiciones) => {
+        let nvoParrao = parrafo.split(" ").map(palabra => {
+            let isParaDefinir = definiciones.find( item => item.palabra == palabra)
+            if( isParaDefinir == undefined){
+                return palabra
+            }else{
+                return "<span onClick='utlitarios.showDefinicion()' data-definicion='"+isParaDefinir.definicion+"' class='para-definir cursor-pointer'>"+isParaDefinir.palabra+"</span>" 
+            }
+        })
+     return nvoParrao.join(" ")   
     }
 
 }

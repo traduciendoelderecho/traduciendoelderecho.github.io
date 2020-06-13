@@ -2,7 +2,7 @@ var dataPublicationsSmall = null
 var publicationSelected = null
 const urlBaseDev = "http://192.168.1.38:5500/sitio-de-prueba"
 const urlBaseProd = "https://traduciendoelderecho.github.io/sitio-de-prueba"
-const urlBaseDB = urlBaseProd
+const urlBaseDB = urlBaseDev
 const urlJsonSmallPublications = urlBaseDB+"/src/js/data-publications-small.json"
 const formFilter = document.getElementById("form-filter")
 const contFormFilter = document.getElementById("cont-form-filter")
@@ -20,6 +20,7 @@ const urlBaseImages = "/src/imagenes"
 const urlCarpetaImagenesArticulos = "/imagenes-articulos/"
 const urlCarpetaIconos = "/icons/"
 const subtituloNosotros = document.querySelectorAll(".cont-items-nosotros .subtitulo")
+var paraDefinir = null
 
 var itemNosotrosSelected = null
 

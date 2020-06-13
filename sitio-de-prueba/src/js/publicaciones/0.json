@@ -59,6 +59,9 @@
     "tipo":{
         "tipoPublicacion":"Traduinspiracion",
         "categoria":null
-    }
-    
+    },
+    "definiciones":[
+        {"palabra":"armada","definicion":"En el ambito juridico, este termino indica  el numero de cuota en la que se ejecutara la entrega de una determinada suma de dinero."},
+        {"palabra":"CIC","definicion":"Es la cuenta donde se registran los aportes obligatorios y voluntarios; realizados por el afiliado."}
+    ]
 }

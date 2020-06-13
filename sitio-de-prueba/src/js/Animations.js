@@ -181,7 +181,7 @@ const  animations = {
                 cont.appendChild(subTitulo)
                 e.parrafos.forEach(t => {
                     let parrafo =  document.createElement("p")
-                    parrafo.innerText = t.parrafo
+                    parrafo.innerHTML = utlitarios.searchDefinitions(t.parrafo,publicacion.definiciones)
                     cont.appendChild(parrafo)
                 })
                 return cont
@@ -243,8 +243,6 @@ const  animations = {
             }
             itemNosotrosSelected =  elemnt
         }
-    
-    
     },
     closeItemNosotros : (elemnt) => {
         let arrow = elemnt.querySelector(".arrow")
@@ -276,5 +274,29 @@ const  animations = {
         }
         info.style.height = (alturaForInfoDiv + 10)+"px"
         
+    },
+    createdDefinicion : (e) => {
+        let definicion  = e.dataset.definicion
+        let divDefinicion = document.createElement("div")
+        let iconClose = document.createElement("span")
+        let posicionElemento = null
+        divDefinicion.innerText = definicion
+        iconClose.className = "icon-close"
+        iconClose.addEventListener('click', () => {
+            let p = iconClose.parentNode.parentNode
+            p.removeChild(p.querySelector(".definicion"))
+        })
+        divDefinicion.className = "definicion transition"
+        divDefinicion.appendChild(iconClose)
+        e.appendChild(divDefinicion)
+        divDefinicion.style.top = "-"+divDefinicion.clientHeight+"px"
+        posicionElemento = divDefinicion.getBoundingClientRect()
+        console.log(posicionElemento)
+        if(posicionElemento.left < 0){
+            divDefinicion.style.left = 0+"px" 
+        }else if(posicionElemento.right < 0){
+            divDefinicion.style.right = 0+"px" 
+        }
+    
     }
 }

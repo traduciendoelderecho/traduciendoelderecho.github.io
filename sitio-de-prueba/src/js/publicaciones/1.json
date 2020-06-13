@@ -59,6 +59,11 @@
     "tipo":{
         "tipoPublicacion":"Traduinspiracion",
         "categoria":null
-    }
+    },
+    "definiciones":[
+        {"nombre":"armada","definicion":"Esto es la definicion de aramada"},
+        {"nombre":"pablito","definicion":"Esto es la definicion pablito"},
+        {"nombre":"Josesito","definicion":"Esto es la definicion Josesito"}
+    ]
     
 }
