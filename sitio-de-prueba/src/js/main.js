@@ -2,8 +2,6 @@ document.addEventListener('DOMContentLoaded',()=>{
     utlitarios.getQueryParam()
 })
 
-animations.selectedtitles(collectionItemsMenu)
-
 for(let i = 0 ; i < itemsMenuPublicaciones.length ; i++){
         itemsMenuPublicaciones[i].addEventListener('click',function(){
             animations.noResltarItemMenu(itemMenuPublications.button)

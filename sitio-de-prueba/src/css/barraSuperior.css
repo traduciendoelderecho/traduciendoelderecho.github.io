@@ -11,7 +11,9 @@
     height: 80px;
   
 }
-
+#opciones-menu a{
+  text-decoration: none;
+}
 .vertical-midle{
   vertical-align: middle;
 }

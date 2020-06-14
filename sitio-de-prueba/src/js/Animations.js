@@ -51,22 +51,13 @@ const  animations = {
                     items[i].firstChild.style.backgroundImage = "url("+urlBaseDB+urlBaseImages+urlCarpetaIconos+"radio_button_unchecked.svg)"
             }
         },
-        selectedtitles : (titles)=>{
-            for(let  i = 0 ; i < titles.length;i++){
-                titles[i].buttons.forEach( b => {
-                    b.srcDom.addEventListener('click',function(){
-                        window.location = urlBaseDB+"/?seccion="+titles[i].nombre
-                    })
-                })
-            }
-        },
         resaltarItemMenuSelected : (items) =>{
             items.forEach(item => {
                 tipo = item.srcDom.dataset.tipo 
                 if(tipo == "desktop"){
-                        animations.resaltarItemMenu(item.srcDom)
+                    animations.resaltarItemMenu(item.srcDom)
                  }else{
-                        item.srcDom.style.opacity = "1"
+                    item.srcDom.style.opacity = "1"
                  }
             })
         },
@@ -80,7 +71,6 @@ const  animations = {
                  }
             })
         },resaltarItemMenu:(item)=>{
-            
             item.style.fontWeight = "700"
             item.firstChild.nextSibling.style.display ="block"
         },noResltarItemMenu:(item)=>{
