@@ -53,8 +53,7 @@
 }
 .cont-items-nosotros{
     position: relative; 
-    margin-bottom: 5px;
-    padding-left: 5px;
+    margin: 4px;
 }
 .padre-cont-items-nosotros{
     grid-area: itemNosotros;
