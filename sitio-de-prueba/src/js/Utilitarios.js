@@ -30,7 +30,7 @@ const utlitarios = {
         }
         return itemMenuPublicacion
     },
-    filtrarPorTitulo : (publicaciones,key)=> publicaciones.filter( p => p.titulo.includes(key)),
+    filtrarPorTitulo : (publicaciones,key)=> publicaciones.filter( p => p.titulo.toUpperCase().includes(key.toUpperCase())),
     getQueryParam : () => {
         const urlParams = new URLSearchParams(window.location.search);
         if(urlParams.entries().next().value !== undefined){
