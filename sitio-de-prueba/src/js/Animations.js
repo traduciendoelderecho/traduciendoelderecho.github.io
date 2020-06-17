@@ -82,13 +82,16 @@ const  animations = {
             //container.innerHTML = ""
             
             if(data.length == 0){
-                container.innerHTML = "<h2>No se encontraron resultados para  la busqueda</h2>"
+                let span = document.createElement("span")
+                span.innerText = "No se encontraron resultados"
+                span.style.margin = "20px"
+                span.style.fontSize = "18px"
+                container.appendChild(span)
             }else{
                 data.map( (publicacion) => {
                    let  p = animations.createNodosForPublication(publicacion)
                    p.addEventListener('click',function(){
                         let id  = parseInt(this.dataset.id)
-                        id  =  0
                         window.location=urlBaseDB+"/?publicacion="+id
                    })
                    return p
@@ -160,6 +163,7 @@ const  animations = {
             contPublicacion.appendChild(img)
             contPublicacion.appendChild(Intro)
             let contadorSubTemas = 0;
+
             publicacion.temas.map( e => {
                 contadorSubTemas++
                 let cont = document.createElement("div")
@@ -176,6 +180,7 @@ const  animations = {
                 })
                 return cont
             }).forEach( r => contPublicacion.appendChild(r))
+            
             espacioParaMapa.appendChild(animations.crearMapaDePublicacion(mapa))  
             autores.className = "pie-publicacion" 
             autores.innerText = "Publicado por : "+publicacion.autores.map(e => e.nombre).join()  

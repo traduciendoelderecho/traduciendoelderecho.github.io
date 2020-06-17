@@ -2,7 +2,7 @@ const utlitarios = {
     filterForEtiqueta : (etiqueta,data) => {
         let arrayDatos = null;
         if(etiqueta == "recientes"){
-            arrayDatos = data.slice(data.length - 6 )
+            arrayDatos = data.slice(data.length - 5 )
         }else{
             arrayDatos = data.filter(item => item.tipopublicaion == etiqueta)
         }
