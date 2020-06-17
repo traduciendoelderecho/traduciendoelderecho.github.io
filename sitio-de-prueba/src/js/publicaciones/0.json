@@ -1,6 +1,6 @@
 {
     "id":0,
-    "img":"men.jpg",
+    "img":"viejito.jpg",
     "tituloPublicacion":"Disposición de fondos pensionarios en épocas de pandemia",
     "introducion":[
         {"parrafo":"Hoy la humanidad hace frente a una complicada situación, la expansión de un virus de dimensiones microscópicas; pero de consecuencias gigantescas no sólo por la puesta en peligro de la vida de todos los habitantes del planeta, sino también, por el impacto económico que ha generado en distintos países de América Latina. Así, se puede observar que miles de ciudadanos enfrentan a diario múltiples dificultades para adquirir productos de primera necesidad y no morir de hambre."},
@@ -61,7 +61,7 @@
         "categoria":null
     },
     "definiciones":[
-        {"palabra":"armada","definicion":"En el ambito juridico, este termino indica  el numero de cuota en la que se ejecutara la entrega de una determinada suma de dinero."},
+        {"palabra":"armada","definicion":"En el ámbito jurídico, este término indica  el número de cuota en la que se ejecutará la entrega de una determinada suma de dinero."},
         {"palabra":"CIC","definicion":"Es la cuenta donde se registran los aportes obligatorios y voluntarios; realizados por el afiliado."}
     ]
 }

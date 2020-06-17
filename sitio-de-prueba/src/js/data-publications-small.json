@@ -1,7 +1,7 @@
 [
     {
         "id": 0,
-        "imgPortada": "men.jpg",
+        "imgPortada": "viejito.jpg",
         "fecha": "28/05/2020 20:35pm",
         "tipopublicaion":"Traduinspiracion",
         "categoria": null,
@@ -14,7 +14,7 @@
         "fecha": "28/05/2020 20:35pm",
         "tipopublicaion":"Tradutema",
         "categoria": "Administrativo",
-        "titulo": "Esto es  un titulo de prueba",
+        "titulo": "Esto es  un titulo de prueba (fake)",
         "introducion": "Hoy la humanidad hace frente a una complicada situación, la expansión de un virus de dimensiones microscópicas; pero de consecuencias gigantescas no sólo por la puestapero de consecuencias gigantescas no sólo por la puesta pero de consecuencias etc etc etc etc"
     },
     {
@@ -23,7 +23,7 @@
         "fecha": "28/05/2020 20:35pm",
         "tipopublicaion":"Traduinspiracion",
         "categoria": null,
-        "titulo": "Disposición de fondos pensionarios en épocas de pandemia",
+        "titulo": "Disposición de fondos pensionarios en épocas de pandemia (fake)",
         "introducion": "Hoy la humanidad hace frente a una complicada situación, la expansión de un virus de dimensiones microscópicas; pero de consecuencias gigantescas no sólo por la puestapero de consecuencias gigantescas no sólo por la puesta pero de consecuencias etc etc etc etc"
     },
     {
@@ -32,7 +32,7 @@
         "fecha": "28/05/2020 20:35pm",
         "tipopublicaion":"Traduley",
         "categoria": null,
-        "titulo": "Presidente reuncia a su cargo",
+        "titulo": "Presidente reuncia a su cargo (fake)",
         "introducion": "Hoy la humanidad hace frente a una complicada situación, la expansión de un virus de dimensiones microscópicas; pero de consecuencias gigantescas no sólo por la puestapero de consecuencias gigantescas no sólo por la puesta pero de consecuencias etc etc etc etc"
     },
     {
@@ -41,7 +41,7 @@
         "fecha": "28/05/2020 20:35pm",
         "tipopublicaion":"Traduarticulo",
         "categoria": null,
-        "titulo": "Aumento del salario minimo",
+        "titulo": "Aumento del salario minimo (fake)",
         "introducion": "Hoy la humanidad hace frente a una complicada situación, la expansión de un virus de dimensiones microscópicas; pero de consecuencias gigantescas no sólo por la puestapero de consecuencias gigantescas no sólo por la puesta pero de consecuencias etc etc etc etc"
     }   
 ]
