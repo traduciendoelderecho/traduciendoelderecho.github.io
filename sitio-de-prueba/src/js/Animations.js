@@ -88,14 +88,8 @@ const  animations = {
                 span.style.fontSize = "18px"
                 container.appendChild(span)
             }else{
-                data.map( (publicacion) => {
-                   let  p = animations.createNodosForPublication(publicacion)
-                   p.addEventListener('click',function(){
-                        let id  = parseInt(this.dataset.id)
-                        window.location=urlBaseDB+"/?publicacion="+id
-                   })
-                   return p
-                }).forEach( elemnt => container.appendChild(elemnt))
+                data.map((publicacion) => animations.createNodosForPublication(publicacion))
+                    .forEach( elemnt => container.appendChild(elemnt))
             }
             
         },
@@ -103,6 +97,10 @@ const  animations = {
             let publicacion  = document.createElement("article")
             let encabezado = document.createElement("div")
             let titulo = document.createElement("h2")
+            publicacion.addEventListener('click',function(){
+                let id  = parseInt(this.dataset.id)
+                window.location=urlBaseDB+"/?publicacion="+id
+            })
             
             let intro = document.createElement("p")
             let fecha =  document.createElement("span")
