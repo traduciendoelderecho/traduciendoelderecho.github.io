@@ -145,17 +145,6 @@ const utlitarios = {
         if(e.querySelector(".definicion") == null && e.className == "para-definir cursor-pointer"){
            animations.createdDefinicion(e)
         }
-    },
-    searchDefinitions : (parrafo,definiciones) => {
-        let nvoParrao = parrafo.split(" ").map(palabra => {
-            let isParaDefinir = definiciones.find( item => item.palabra == palabra)
-            if( isParaDefinir == undefined){
-                return palabra
-            }else{
-                return "<span onClick='utlitarios.showDefinicion()' data-definicion='"+isParaDefinir.definicion+"' class='para-definir cursor-pointer'>"+isParaDefinir.palabra+"</span>" 
-            }
-        })
-     return nvoParrao.join(" ")   
     }
 
 }

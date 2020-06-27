@@ -173,7 +173,7 @@ const  animations = {
                 cont.appendChild(subTitulo)
                 e.parrafos.forEach(t => {
                     let parrafo =  document.createElement("p")
-                    parrafo.innerHTML = utlitarios.searchDefinitions(t.parrafo,publicacion.definiciones)
+                    parrafo.innerHTML = t.parrafo
                     cont.appendChild(parrafo)
                 })
                 return cont

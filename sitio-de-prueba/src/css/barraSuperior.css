@@ -29,16 +29,10 @@
 #logo{
     font-family: 'Pacifico', sans-serif;   
     color: white;
-    font-size: 28px;
-    letter-spacing: 3px;
     display: inline-block;
-    margin-block-start: 0em !important;
-    margin-block-end: 0em !important;
     grid-area: logo;
-    height: auto;
+    height: 65px;
     width: auto;
-    text-align: left;
-    font-weight: 500;
 }
 #opciones-menu{
   grid-area: opciones;
