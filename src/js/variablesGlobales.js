@@ -1,6 +1,6 @@
 var dataPublicationsSmall = null
 var publicationSelected = null
-const urlBaseDev = "http://192.168.1.36:5500"
+const urlBaseDev = "http://192.168.1.37:5500"
 const urlBaseProd = "https://traduciendoelderecho.github.io"
 const urlBaseDB = urlBaseDev
 const urlJsonSmallPublications = urlBaseDB+"/src/js/data-publications-small.json"

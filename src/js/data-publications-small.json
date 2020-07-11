@@ -2,46 +2,55 @@
     {
         "id": 0,
         "imgPortada": "img-viejito.jpg",
-        "fecha": "28/05/2020 20:35pm",
-        "tipopublicaion":"Traduinspiracion",
-        "categoria": null,
+        "fecha": "Jul 8, 2020 7:03:08 PM",
+        "tipopublicaion":"Tradutema",
+        "categoria": "Derecho Previsional",
         "titulo": "Disposición de fondos pensionarios en épocas de pandemia",
-        "introducion": "Hoy la humanidad hace frente a una complicada situación, la expansión de un virus de dimensiones microscópicas; pero de consecuencias gigantescas no sólo por la puestapero de consecuencias gigantescas no sólo por la puesta pero de consecuencias etc etc etc etc"
+        "introducion": "Hoy la humanidad hace frente a una complicada situación, la expansión de un virus de dimensiones microscópicas; pero de consecuencias gigantescas no sólo por la puesta en peligro de la vida de todos los habitantes del planeta"
     },
     {
         "id": 1,
-        "imgPortada": "people.jpg",
-        "fecha": "28/05/2020 20:35pm",
+        "imgPortada": "img-aportes.jpg",
+        "fecha": "Jul 8, 2020 7:07:13 PM",
         "tipopublicaion":"Tradutema",
-        "categoria": "Administrativo",
-        "titulo": "Esto es  un titulo de prueba (fake)",
-        "introducion": "Hoy la humanidad hace frente a una complicada situación, la expansión de un virus de dimensiones microscópicas; pero de consecuencias gigantescas no sólo por la puestapero de consecuencias gigantescas no sólo por la puesta pero de consecuencias etc etc etc etc"
+        "categoria": "Derecho Empresarial",
+        "titulo": "Algunos apuntes sobre la reanudación de actividades económicas en el Perú",
+        "introducion": "La propagación del Covid – 19 en el mundo y la ausencia de su vacuna; constituyen una grave amenaza para la economía mundial. Más aún si desde los primeros meses de su aparición, esta nueva enfermedad ha afectado ..."
     },
     {
         "id": 2,
-        "imgPortada": "economy.jpg",
-        "fecha": "28/05/2020 20:35pm",
-        "tipopublicaion":"Traduinspiracion",
-        "categoria": null,
-        "titulo": "Disposición de fondos pensionarios en épocas de pandemia (fake)",
-        "introducion": "Hoy la humanidad hace frente a una complicada situación, la expansión de un virus de dimensiones microscópicas; pero de consecuencias gigantescas no sólo por la puestapero de consecuencias gigantescas no sólo por la puesta pero de consecuencias etc etc etc etc"
+        "imgPortada": "img-contrataciones.jpg",
+        "fecha": "Jul 8, 2020 7:24:19 PM",
+        "tipopublicaion":"Tradutema",
+        "categoria": "Derecho Administrativo",
+        "titulo": "LA CONTRATACIÓN PÚBLICA",
+        "introducion": "En algún momento te has preguntado ¿cómo el Estado se abastece de productos para brindar un buen servicio o cumplir con sus funciones? Pues bien, para poder hacerlo, el Estado debe contratar con ciertas entidades o personas..."
     },
     {
         "id": 3,
-        "imgPortada": "men.jpg",
-        "fecha": "28/05/2020 20:35pm",
-        "tipopublicaion":"Traduley",
-        "categoria": null,
-        "titulo": "Presidente reuncia a su cargo (fake)",
-        "introducion": "Hoy la humanidad hace frente a una complicada situación, la expansión de un virus de dimensiones microscópicas; pero de consecuencias gigantescas no sólo por la puestapero de consecuencias gigantescas no sólo por la puesta pero de consecuencias etc etc etc etc"
+        "imgPortada": "img-medidasTributariasEnCOVID.jpg",
+        "fecha": "Jul 8, 2020 7:48:28 PM",
+        "tipopublicaion":"Tradutema",
+        "categoria": "Derecho Tributario",
+        "titulo": "MEDIDAS TRIBUTARIAS DURANTE EL COVID-19",
+        "introducion": "A raíz de todas las medidas que se han venido dando, la Administración Tributaria ha tenido por bien, dar una serie de aplazamientos a sus contribuyentes, para facilitar o alivianar las obligaciones tributarias. A continuación..."
     },
     {
         "id": 4,
-        "imgPortada": "economy.jpg",
-        "fecha": "28/05/2020 20:35pm",
-        "tipopublicaion":"Traduarticulo",
-        "categoria": null,
-        "titulo": "Aumento del salario minimo (fake)",
-        "introducion": "Hoy la humanidad hace frente a una complicada situación, la expansión de un virus de dimensiones microscópicas; pero de consecuencias gigantescas no sólo por la puestapero de consecuencias gigantescas no sólo por la puesta pero de consecuencias etc etc etc etc"
-    }   
+        "imgPortada": "img-inscripcion.jpg",
+        "fecha": "Jul 10, 2020 1:55:23 PM",
+        "tipopublicaion":"Tradutema",
+        "categoria": "Derecho Registral",
+        "titulo": "PRINCIPIOS EXISTENTES EN LA PRE INSCRIPCIÓN",
+        "introducion": "Para la construcción de una imponente edificación, es necesario asegurarnos que las bases o cimientos que sostienen a la misma, se encuentren dotadas de los materiales y esfuerzo suficiente, para hacer de ella una estructura..."
+    },
+    {
+        "id": 5,
+        "imgPortada": "img-inscripcionPart2.jpg",
+        "fecha": "Jul 10, 2020 1:59:26 PM",
+        "tipopublicaion":"Tradutema",
+        "categoria": "Derecho Registral",
+        "titulo": "PRINCIPIOS EXISTENTES EN LA POST INSCRIPCIÓN",
+        "introducion": "El presente documento, es la continuación del tradutema denominado “Los principios existentes en la pre inscripción” , aquí trataremos de desarrollar de la forma más dinámica"
+    }
 ]

@@ -96,6 +96,7 @@ const  animations = {
         createNodosForPublication:(publication)=>{
             let publicacion  = document.createElement("article")
             let encabezado = document.createElement("div")
+            let encabezadoHijo = document.createElement("div")
             let titulo = document.createElement("h2")
             publicacion.addEventListener('click',function(){
                 let id  = parseInt(this.dataset.id)
@@ -105,6 +106,7 @@ const  animations = {
             let intro = document.createElement("p")
             let fecha =  document.createElement("span")
             encabezado.className ="encabezado text-color-white"
+            encabezadoHijo.className = "encabezado-hijo"
             publicacion.className = "publicacion cursor-pointer"
             
             fecha.className = "fecha"
@@ -114,15 +116,15 @@ const  animations = {
             intro.innerText = publication.introducion
             fecha.innerText = publication.fecha
             publicacion.dataset.id = publication.id
-            encabezado.appendChild(titulo)
+            encabezadoHijo.appendChild(titulo)
 
             if(publication.categoria !== null){
                 let categoria =  document.createElement("span")
                 categoria.className = "tema"
                 categoria.innerText = publication.categoria
-                encabezado.appendChild(categoria)
+                encabezadoHijo.appendChild(categoria)
             }
-
+            encabezado.appendChild(encabezadoHijo)
             publicacion.appendChild(encabezado)
             publicacion.appendChild(intro)
             publicacion.appendChild(fecha)
