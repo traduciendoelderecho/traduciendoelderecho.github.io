@@ -18,15 +18,6 @@
         "introducion": "La propagación del Covid – 19 en el mundo y la ausencia de su vacuna; constituyen una grave amenaza para la economía mundial. Más aún si desde los primeros meses de su aparición, esta nueva enfermedad ha afectado ..."
     },
     {
-        "id": 2,
-        "imgPortada": "img-contrataciones.jpg",
-        "fecha": "Jul 8, 2020 7:24:19 PM",
-        "tipopublicaion":"Tradutema",
-        "categoria": "Derecho Administrativo",
-        "titulo": "LA CONTRATACIÓN PÚBLICA",
-        "introducion": "En algún momento te has preguntado ¿cómo el Estado se abastece de productos para brindar un buen servicio o cumplir con sus funciones? Pues bien, para poder hacerlo, el Estado debe contratar con ciertas entidades o personas..."
-    },
-    {
         "id": 3,
         "imgPortada": "img-medidasTributariasEnCOVID.jpg",
         "fecha": "Jul 8, 2020 7:48:28 PM",
@@ -43,15 +34,6 @@
         "categoria": "Derecho Registral",
         "titulo": "PRINCIPIOS EXISTENTES EN LA PRE INSCRIPCIÓN",
         "introducion": "Para la construcción de una imponente edificación, es necesario asegurarnos que las bases o cimientos que sostienen a la misma, se encuentren dotadas de los materiales y esfuerzo suficiente, para hacer de ella una estructura..."
-    },
-    {
-        "id": 5,
-        "imgPortada": "img-inscripcionPart2.jpg",
-        "fecha": "Jul 10, 2020 1:59:26 PM",
-        "tipopublicaion":"Tradutema",
-        "categoria": "Derecho Registral",
-        "titulo": "PRINCIPIOS EXISTENTES EN LA POST INSCRIPCIÓN",
-        "introducion": "El presente documento, es la continuación del tradutema denominado “Los principios existentes en la pre inscripción” , aquí trataremos de desarrollar de la forma más dinámica posible, el contenido de cada uno de los principios..."
     },
     {
         "id": 6,
