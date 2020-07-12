@@ -93,16 +93,11 @@ const  animations = {
             }
             
         },
-        createNodosForPublication:(publication)=>{
-            let publicacion  = document.createElement("article")
+        createNodosForPublication:(publicacionJson)=>{
+            let publicacion  = document.createElement("a")
             let encabezado = document.createElement("div")
             let encabezadoHijo = document.createElement("div")
             let titulo = document.createElement("h2")
-            publicacion.addEventListener('click',function(){
-                let id  = parseInt(this.dataset.id)
-                window.location=urlBaseDB+"/?publicacion="+id
-            })
-            
             let intro = document.createElement("p")
             let fecha =  document.createElement("span")
             encabezado.className ="encabezado text-color-white"
@@ -110,18 +105,18 @@ const  animations = {
             publicacion.className = "publicacion cursor-pointer"
             
             fecha.className = "fecha"
-            encabezado.style.backgroundImage = "url("+urlBaseDB+urlBaseImages+urlCarpetaImagenesArticulos+publication.imgPortada+")"
-            titulo.innerText = publication.titulo
+            encabezado.style.backgroundImage = "url("+urlBaseDB+urlBaseImages+urlCarpetaImagenesArticulos+publicacionJson.imgPortada+")"
+            titulo.innerText = publicacionJson.titulo
             
-            intro.innerText = publication.introducion
-            fecha.innerText = publication.fecha
-            publicacion.dataset.id = publication.id
+            intro.innerText = publicacionJson.introducion
+            fecha.innerText = publicacionJson.fecha
+            publicacion.href = urlBaseDB+"/?publicacion="+publicacionJson.id
             encabezadoHijo.appendChild(titulo)
 
-            if(publication.categoria !== null){
+            if(publicacionJson.categoria !== null){
                 let categoria =  document.createElement("span")
                 categoria.className = "tema"
-                categoria.innerText = publication.categoria
+                categoria.innerText = publicacionJson.categoria
                 encabezadoHijo.appendChild(categoria)
             }
             encabezado.appendChild(encabezadoHijo)
