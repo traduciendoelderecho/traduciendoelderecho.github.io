@@ -102,7 +102,7 @@ const  animations = {
             let fecha =  document.createElement("span")
             encabezado.className ="encabezado text-color-white"
             encabezadoHijo.className = "encabezado-hijo"
-            publicacion.className = "publicacion cursor-pointer"
+            publicacion.className = "publicacion"
             
             fecha.className = "fecha"
             encabezado.style.backgroundImage = "url("+urlBaseDB+urlBaseImages+urlCarpetaImagenesArticulos+publicacionJson.imgPortada+")"
