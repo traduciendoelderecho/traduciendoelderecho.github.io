@@ -102,8 +102,11 @@ const utlitarios = {
                 contPublicaciones.innerHTML = ""
                 animations.addPublicationsToContainer(itemMenuPublications.filtro(dataPublicationsSmall),contPublicaciones)
                 animations.resaltarItemMenuSelected(menuAppSelected.buttons)
-                let recomendados = dataPublicationsSmall.filter(e => e.tipopublicaion == publicacion.tipo.tipoPublicacion && e.id !== publicacion.id).reverse()    
-                animations.addPublicationsToContainer(recomendados.slice(recomendados.length - 4),contRecomendados)
+                let recomendados = dataPublicationsSmall
+                        .filter(e => e.tipopublicaion == publicacion.tipo.tipoPublicacion && e.id !== publicacion.id)
+                        .reverse()
+                        .slice(-3)   
+                animations.addPublicationsToContainer(recomendados,contRecomendados)
             },
             urlJsonSmallPublications
         )
