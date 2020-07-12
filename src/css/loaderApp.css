@@ -13,6 +13,7 @@
 }
 #logotipoAndLoader img{
     max-height: 150px;
+    max-width: 320px;
     display: block;
 }
 #loader-app{
