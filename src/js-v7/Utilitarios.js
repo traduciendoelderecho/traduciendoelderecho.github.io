@@ -49,7 +49,7 @@ const utlitarios = {
                             animations.openDetailsPublication(publicationSelected)
                             loaderApp.style.display = "none"
                             utlitarios.getPublicationsSmall(publicationSelected)
-                        },urlBaseDB+"/src/js/publicaciones/"+valor.valor+".json")
+                        },urlBaseDB+"/src/js-v7/publicaciones/"+valor.valor+".json")
                          menuAppSelected = publicacionDetallecont
                          
                 break
