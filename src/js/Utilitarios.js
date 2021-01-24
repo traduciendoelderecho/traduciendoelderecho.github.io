@@ -148,6 +148,9 @@ const utlitarios = {
         if(e.querySelector(".definicion") == null && e.className == "para-definir cursor-pointer"){
            animations.createdDefinicion(e)
         }
+    },
+    converterFirstCapitalLetter: (string) =>{
+       return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase()
     }
 
 }

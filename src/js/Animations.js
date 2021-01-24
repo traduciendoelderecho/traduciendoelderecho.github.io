@@ -106,7 +106,7 @@ const  animations = {
             
             fecha.className = "fecha"
             encabezado.style.backgroundImage = "url("+urlBaseDB+urlBaseImages+urlCarpetaImagenesArticulos+publicacionJson.imgPortada+")"
-            titulo.innerText = publicacionJson.titulo
+            titulo.innerText = utlitarios.converterFirstCapitalLetter(publicacionJson.titulo)
             
             intro.innerText = publicacionJson.introducion
             fecha.innerText = publicacionJson.fecha
@@ -152,7 +152,7 @@ const  animations = {
             mapa.titulo.id = "#"+idTitulo
             mapa.titulo.nombre = publicacion.tituloPublicacion
             titulo.id = idTitulo
-            titulo.innerText = publicacion.tituloPublicacion
+            titulo.innerText = utlitarios.converterFirstCapitalLetter(publicacion.tituloPublicacion)
             contPublicacion.appendChild(espacioParaMapa)
             contPublicacion.appendChild(titulo)
             contPublicacion.appendChild(img)
