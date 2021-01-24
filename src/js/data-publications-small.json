@@ -43,5 +43,14 @@
         "categoria": "Derecho Administrativo",
         "titulo": "La prescripción en el Procedimiento Administrativo Disciplinario",
         "introducion": "A partir del catorce (14) de septiembre de 2014 el régimen disciplinario y procedimiento sancionador regulado en el Título V de la Ley 30057 – Ley del Servicio Civil, es aplicable a los servidores y ex servidores ligados..."
+    },
+    {
+        "id": 7,
+        "imgPortada": "contrataciones.jpg",
+        "fecha": "Jan 23, 2021 6:39:19 PM",
+        "tipopublicaion":"Tradutema",
+        "categoria": "Derecho Administrativo",
+        "titulo": "LA CONTRATACIÓN PÚBLICA",
+        "introducion": "AEn algún momento te has preguntado ¿cómo el Estado se abastece de productos para brindar un buen servicio o cumplir con sus funciones? Pues bien, para poder hacerlo, el Estado debe contratar con ciertas entidades o personas..."
     }
 ]
