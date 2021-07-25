@@ -1,0 +1,108 @@
+{
+    "tituloPublicacion":"LEY Nº 31246 ",
+    "img":"laboral.jpg",
+    "introducion":[
+       {
+          "parrafo":""
+       },
+       {
+          "parrafo":"El 25 de junio de 2021 se ha publicado en el Diario Oficial el Peruano la ley N° 31246, que modifica la ley 29783, Ley de seguridad y salud en el trabajo, para garantizar el derecho de los trabajadores a la seguridad y salud en el trabajo ante riesgo epidemiológico y sanitario, con la finalidad de garantizar el derecho de los trabajadores en su centro laboral ante cualquier tipo de riesgo especialmente tras los acontecimientos ocurridos desde la llegada del del coronavirus. "
+       }
+    ],
+    "temas":[
+       {
+          "subtitulo":"Artículo 1: Objeto de la ley",
+          "parrafos":[
+             {
+                "parrafo":"La presente ley tiene por objeto modificar los artículos 49 y 60 de la Ley 29783, Ley de Seguridad y Salud en el Trabajo, para garantizar el bienestar de los trabajadores de los sectores público y privado, indistintamente del régimen laboral que tengan, o de la modalidad, presencial o remota, por la que están desarrollando sus labores, para lo cual, el empleador debe asumir el costo de los equipos de protección personal, de acuerdo a las normas técnicas peruanas, establecidas en la Resolución Directoral 005-2020-INACAL/DN, y el costo de las pruebas de tamizaje necesarias, debidamente acreditadas por la Autoridad Nacional de Salud; todo ello, con el objetivo de controlar la propagación de enfermedades transmisibles dentro y fuera del ámbito laboral."
+             }
+          ]
+       },
+       {
+          "subtitulo":"Artículo 2: Modificación de los artículos 49 y 60 de la Ley 29783, Ley de Seguridad y Salud en el Trabajo",
+          "parrafos":[
+             {
+                "parrafo":"Modifícanse los artículos 49 y 60 de la Ley 29783, Ley de Seguridad y Salud en el Trabajo, conforme a los siguientes textos:"
+             },
+             {
+                "parrafo":"“ARTÍCULO 49. OBLIGACIONES DEL EMPLEADOR "
+             },
+             {
+                "parrafo":"El empleador, entre otras, tiene las siguientes obligaciones:"
+             },
+             {
+                "parrafo":"[...]"
+             },
+             {
+                "parrafo":"d) Practicar exámenes médicos cada dos años, de manera obligatoria, a cargo del empleador. Los exámenes médicos de salida son facultativos y podrán realizarse a solicitud del empleador o trabajador. En cualquiera de los casos, los costos de los exámenes médicos los asume el empleador. En el caso de los trabajadores que realizan actividades de alto riesgo, el empleador se encuentra obligado a realizar los exámenes médicos antes, durante y al término de la relación laboral. El reglamento desarrollará, a través de las entidades competentes, los instrumentos que fueran necesarios para acotar el costo de los exámenes médicos."
+             },
+             {
+                "parrafo":"En el caso de declaración de emergencia sanitaria, el empleador ejerce la vigilancia epidemiológica e inteligencia sanitaria respecto de sus trabajadores con el objetivo de controlar la propagación de las enfermedades transmisibles, realizando las pruebas de tamizaje necesarias al personal a su cargo, las mismas que deben estar debidamente acreditadas por la Autoridad Nacional de Salud, sin que ello genere un costo o retención salarial de ningún tipo al personal a su cargo."
+             },
+             {
+                "parrafo":"[…]”."
+             },
+             {
+                "parrafo":"“ARTÍCULO 6O. EQUIPOS PARA LA PROTECCIÓN"
+             },
+             {
+                "parrafo":"El empleador proporciona a sus trabajadores equipos de protección personal adecuados, según el tipo de trabajo y riesgos específicos presentes en el desempeño de sus funciones, cuando no se puedan eliminar en su origen los riesgos laborales o sus efectos perjudiciales para la salud este verifica el uso efectivo de los mismos."
+             },
+             {
+                "parrafo":"Los equipos de protección personal proporcionados a los trabajadores deben cumplir con las normas técnicas peruanas; su costo es asumido en su totalidad por el empleador, sin que ello genere un costo o retención salarial de ningún tipo al personal a su cargo, con el objetivo de garantizar los medios y condiciones que protejan la vida, la salud y el bienestar de los trabajadores de los sectores público y privado, indistintamente de su régimen laboral, o si al momento de prestar servicios no se encontraban en su centro laboral, o vienen desarrollando sus labores de forma remota”."
+             }
+          ]
+       },
+       {
+          "subtitulo":"DISPOSICIÓN COMPLEMENTARIA FINAL",
+          "parrafos":[
+             {
+                "parrafo":"ÚNICA. Adecuación del reglamento"
+             },
+             {
+                "parrafo":"El Poder Ejecutivo, en un plazo de treinta días calendario, contados a partir de la vigencia de la presente ley, adecúa el reglamento de la Ley 29783, Ley de Seguridad y Salud en el Trabajo, aprobado por Decreto Supremo 005-2012-TR, a las modificaciones previstas en esta ley."
+             },
+             {
+                "parrafo":"POR TANTO:"
+             },
+             {
+                "parrafo":"Habiendo sido reconsiderada la Ley por el Congreso de la República, insistiendo en el texto aprobado en sesión del Pleno realizada el día cuatro de marzo de dos mil veintiuno, de conformidad con lo dispuesto por el artículo 108 de la Constitución Política del Perú, ordeno que se publique y cumpla."
+             },
+             {
+                "parrafo":"En Lima, a los veinticuatro días del mes de junio de dos mil veintiuno."
+             },
+             {
+                "parrafo":"MIRTHA ESTHER VÁSQUEZ CHUQUILIN"
+             },
+             {
+                "parrafo":"Presidenta a. i. del Congreso de la República"
+             },
+             {
+                "parrafo":"LUIS ANDRÉS ROEL ALVA"
+             },
+             {
+                "parrafo":"Segundo Vicepresidente del Congreso de la República"
+             },
+             {
+                "parrafo":""
+             },
+             {
+                "parrafo":""
+             }
+          ]
+       }
+    ],
+    "tipo":{
+       "tipoPublicacion":"Traduley",
+       "categoria":"Laboral"
+    },
+    "fecha":"Jul 24, 2021 5:39:49 PM",
+    "definiciones":[
+       
+    ],
+    "autores":[
+       {
+          "nombre":"Ana Lucia R.U"
+       }
+    ]
+ }

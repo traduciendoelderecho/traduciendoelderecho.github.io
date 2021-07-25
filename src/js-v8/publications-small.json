@@ -52,5 +52,14 @@
         "categoria": "Derecho Administrativo",
         "titulo": "LA CONTRATACIÓN PÚBLICA",
         "introducion": "En algún momento te has preguntado ¿cómo el Estado se abastece de productos para brindar un buen servicio o cumplir con sus funciones? Pues bien, para poder hacerlo, el Estado debe contratar con ciertas entidades o personas..."
+    },
+    {
+        "id": 8,
+        "imgPortada": "laboral.jpg",
+        "fecha": "Jul 24, 2021 5:39:49 PM",
+        "tipopublicaion":"Traduley",
+        "categoria": "Laboral",
+        "titulo": "LEY Nº 31246",
+        "introducion": "El 25 de junio de 2021 se ha publicado en el Diario Oficial el Peruano la ley N° 31246, que modifica la ley 29783, Ley de seguridad y salud en el trabajo, para garantizar el derecho de los trabajadores a la seguridad..."
     }
 ]
